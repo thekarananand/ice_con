@@ -6,6 +6,12 @@
 
 ## Spin the Development Server 
 
+- Download the Node Modules 
+
+    ``` bash
+    npm install
+    ```
+
 - Run the following to start the Development Server 
 
     ``` bash
