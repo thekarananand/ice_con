@@ -16,8 +16,8 @@
   }
 }
 
-.something_random{
-    background-color: var(--background-start-rgb);
-    color: var(--foreground-rgb);
+body{
+    background-color: rgb(var(--background-start-rgb));
+    color: rgb(var(--foreground-rgb));
     text-align: center;
 }

@@ -1,6 +1,7 @@
 import HomePage from './page'
-import NavBar from './navbar'
-import Bottom from './foot'
+import NavBar from '@/components/navbar'
+import FooterArea from '@/components/footerarea'
+   
 import '@/styles/global.css'
 
 export const metadata = {
@@ -12,17 +13,11 @@ const RootLayout = () => {
   return (
     <html lang='en'>
       <body>
-        <header>
-          <NavBar/>
-        </header>
-
-        <div>
-          <HomePage/>
-        </div>
-
-        <footer>
-          <Bottom/>
-        </footer>
+        
+        <NavBar/>
+        <HomePage/>
+        <FooterArea/>
+        
       </body>
     </html>
   )
