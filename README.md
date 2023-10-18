@@ -6,9 +6,10 @@
 
 ## Spin the Development Server 
 
-- **Step 1**: Download the Node Modules 
+- **Step 1**: Download the Latest Dependencies (i.e., node_modules)
 
     ``` bash
+    npm audit fix --force
     npm install
     ```
 
