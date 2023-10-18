@@ -5,10 +5,10 @@ const _PageContent_ = () => {
     <main>
     <section className='_anchor_'>
         <div className="data">
-            <img src="@/static/nitjlogo.png" alt="" />
+            HERO SECTION
         </div>
     </section>
-    <section className='_anchor_'>
+    <section id='about' className='_anchor_'>
         <div className="data">
             ABOUT #WELCOME
         </div>
@@ -18,7 +18,7 @@ const _PageContent_ = () => {
             IMPORTANT DATES
         </div>
     </section>
-    <section className='_anchor_'>
+    <section id='topics' className='_anchor_'>
         <div className="data">
             CALL FOR PAPERS
         </div>

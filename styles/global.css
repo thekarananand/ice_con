@@ -1,55 +1,71 @@
 @import url('https://fonts.googleapis.com/css2?family=Rubik:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
 @import url('commonClasses.css');
 
+
 :root {
-    --foreground-rgb: 0, 0, 0;
-    --background-start-rgb: 214, 219, 220;
-    --background-end-rgb: 255, 255, 255;
-
-    --nav-height: 3rem;
+    --nav-height: 3.5rem;
     --section-height: calc(100dvh - var(--nav-height));
-}
 
-
-
-/*
-@media (prefers-color-scheme: dark) {
-    :root {
-        --foreground-rgb: 255, 255, 255;
-        --background-start-rgb: 0, 0, 0;
-        --background-end-rgb: 0, 0, 0;
-    }
-}
-
-*/
-
-body{
-    background-color: rgb(var(--background-start-rgb));
-    color: rgb(var(--foreground-rgb));
+    --tab-w: 1200px;
+    --tab-w: 720px;
 }
 
 header{
     position: absolute;
     top: 0;
-
+    z-index: 99;
     width: 100%;
 
     background-color: white;
+    border-bottom: 1px solid hsl(0, 0%, 20%, 50%);
+    /* box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.3); */
+}
 
+header .Brand a {
     display: flex;
 }
 
-header > a {
+header a {
     width: 100%;
     height: 100%;
 }
 
-nav {
-    width: 100%;
-    
+header .Brand img {
+    height: 2.8rem;
+    width: 2.8rem;
+    padding-inline: 0.5rem;
+}
+
+header .Brand .Brand-text h2{
+    font-size: 1.1rem;
+    font-weight: 500;
+}
+header .Brand .Brand-text div{
+    font-size: 0.9rem;
+}
+
+
+header > *,
+header .right,
+header ul,
+header li {
     height: var(--nav-height);
 }
 
+header li,
+header li a {
+    display: flex;
+    align-items: center;
+        
+}
+
+header li {
+    padding-inline: 0.6rem;
+}
+
+header li:hover{
+    background-color: hsla(0, 0%, 0%, 0.1);    
+}
 
 main {
     position: absolute;
@@ -60,6 +76,8 @@ main {
 
     scroll-behavior: smooth;
     overflow-y: scroll;
+
+    background-color: aliceblue;
 }
 
 section {
