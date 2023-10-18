@@ -1,8 +1,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Rubik:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+@import url(commonClasses.css);
 
-@tailwind base;
-@tailwind components;
-@tailwind utilities;
+/*
 
 :root {
     --foreground-rgb: 0, 0, 0;
@@ -10,27 +9,25 @@
     --background-end-rgb: 255, 255, 255;
 }
 
-/* @media (prefers-color-scheme: dark) {
+@media (prefers-color-scheme: dark) {
     :root {
         --foreground-rgb: 255, 255, 255;
         --background-start-rgb: 0, 0, 0;
         --background-end-rgb: 0, 0, 0;
     }
-} */
+}
+
+*/
 
 body{
     background-color: rgb(var(--background-start-rgb));
     color: rgb(var(--foreground-rgb));
-
-    font-family: 'Rubik', sans-serif;
-    position: relative;
 }
 
 header{
     position: absolute;
     top: 0;
     width: 100%;
-
 }
 
 nav {
@@ -44,4 +41,21 @@ nav {
 nav > .right > ul {
     display: flex;
     gap: 3ch;
+}
+
+main {
+    height: 100dvh;
+    width: 100vw;
+    scroll-snap-type: y mandatory;
+    scroll-behavior: smooth;
+    overflow-y: scroll;
+}
+
+section {
+    height: 90dvh;
+    width: 100vw;
+
+    border-bottom: 1px solid red;
+
+    scroll-snap-align: start;
 }

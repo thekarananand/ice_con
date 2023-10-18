@@ -1,0 +1,57 @@
+* {
+    padding: 0;
+    margin: 0;
+    font-size: 1rem;
+    font-family: 'Rubik', sans-serif;
+}
+
+a {text-decoration: none;}
+
+.flex {display: flex;}
+
+.flex-v {display: flex; flex-direction: column;}
+
+.jcc {justify-content: center;}
+
+.jcsa {justify-content: space-around;}
+
+.jcsa {justify-content: space-between;}
+
+.aic {align-items: center;}
+
+.mono {font-family: 'JetBrains Mono', monospace;}
+
+.mono * {font-family: 'JetBrains Mono', monospace;}
+
+.bold {font-weight: 900;}
+
+.gap-5px{gap: 5px;}
+
+.gap-10px{gap: 10px;}
+
+.gap-20px{gap: 20px;}
+
+.absolute{position: absolute;}
+
+.relative{position: relative;}
+
+.z-1{z-index: 1;}
+
+.z-2{z-index: 2;}
+
+.z-3{z-index: 3;}
+
+.z-4{z-index: 4;}
+
+.z-5{z-index: 5;}
+
+
+.top-0{
+    top: 0;
+}
+.w-full{
+    width: 100vw;
+}
+.h-full{
+    height: 100dvh;
+}
