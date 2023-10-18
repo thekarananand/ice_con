@@ -1,4 +1,4 @@
-const FooterArea = () => {
+const _Footer_ = () => {
   return (
     <footer>
       <a href="">Link 1</a>
@@ -12,4 +12,4 @@ const FooterArea = () => {
   )
 }
 
-export default FooterArea 
+export default _Footer_

@@ -12,6 +12,7 @@
     npm audit fix --force
     npm install
     ```
+    > **Node.js** must be installed!
 
 - **Step 2**: Start the Development Server 
 

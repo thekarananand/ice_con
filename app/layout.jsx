@@ -1,8 +1,9 @@
-import HomePage from './page'
-import NavBar from '@/components/navbar'
-import FooterArea from '@/components/footerarea'
-        
+import _PageContent_ from './page'
+import _Nav_ from '@/components/_nav_'
+
 import '@/styles/global.css'
+
+
 
 export const metadata = {
     title: "ICE CONFERENCE'24",
@@ -14,48 +15,9 @@ const RootLayout = () => {
         <html lang='en'>
             <body>
         
-                {/* <NavBar/> */}
+                <_Nav_/>
+                <_PageContent_/>
 
-                <main>
-                    <section>
-                        <div className="data">
-                            HERO SECTION
-                        </div>
-                    </section>
-                    <section>
-                        <div className="data">
-                            ABOUT #WELCOME
-                        </div>
-                    </section>
-                    <section>
-                        <div className="data">
-                            IMPORTANT DATES
-                        </div>
-                    </section>
-                    <section>
-                        <div className="data">
-                            CALL FOR PAPERS
-                        </div>
-                    </section>
-                    <section>
-                        <div className="data">
-                            SUBMIT
-                        </div>
-                    </section>
-                    <section>
-                        <div className="data">
-                            SPONSERS
-                        </div>
-                    </section>
-                    <section>
-                        <div className="data">
-                            VENUE
-                        </div>
-                    </section>
-                </main>
-      
-                {/* <FooterArea/> */}
-        
             </body>
         </html>
     )

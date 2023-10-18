@@ -5,6 +5,8 @@
     font-family: 'Rubik', sans-serif;
 }
 
+ul {list-style-type: none;}
+
 a {text-decoration: none;}
 
 .flex {display: flex;}
@@ -45,13 +47,8 @@ a {text-decoration: none;}
 
 .z-5{z-index: 5;}
 
+.top-0{top: 0;}
 
-.top-0{
-    top: 0;
-}
-.w-full{
-    width: 100vw;
-}
-.h-full{
-    height: 100dvh;
-}
+.w-full{width: 100vw;}
+
+.h-full{height: 100dvh;}
