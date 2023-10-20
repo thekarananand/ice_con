@@ -10,7 +10,8 @@
     --w-tablet: 1080px;
 }
 
-body{
+body {
+    width: 100vw;
     overflow-x: hidden;
 }
 
