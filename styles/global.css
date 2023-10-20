@@ -10,15 +10,11 @@
     --w-tablet: 1080px;
 }
 
-body {
-    width: 100vw;
-    overflow-x: hidden;
-}
 
 header{
     position: absolute;
     top: 0;
-    z-index: 99;
+    z-index: 80;
     width: 100%;
 
     background-color: white;
@@ -106,7 +102,7 @@ header li:hover{
 
     nav {
 
-        transform: translateX(100%);
+        /* transform: translateX(0%); */
 
         position: absolute;
         top: 0;
@@ -114,15 +110,21 @@ header li:hover{
         z-index: 100;
         background-color: rgba(255, 255, 255);
         min-height: 100vh; 
-        width: min( 30ch , calc(100% - 40%));
+        
         overflow: hidden;
         border-left: 1px solid hsl(0, 0%, 20%, 50%);
 
         transition: 300ms ease-out;
+
+        width: 0px;
+        overflow: hidden;
     }
 
     nav[data-visible="true"] {
-        transform: translateX(0%);
+
+        /* transform: translateX(0%); */
+        
+        width: min( 30ch , calc(100% - 40%));
     }
     
     #blank_div[data-visible="true"]{
