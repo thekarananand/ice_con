@@ -10,13 +10,13 @@ export const metadata = {
     description: "ICE CONFERENCE'24"
 }
 
-const RootLayout = () => {
+const RootLayout = ({ children }) => {
     return (
         <html lang='en'>
             <body>
-        
+                
                 <_Nav_/>
-                <_PageContent_/>
+                { children }
 
             </body>
         </html>

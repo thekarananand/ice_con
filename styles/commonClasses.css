@@ -35,6 +35,15 @@ body{
     font-weight: 400;
 }
 
+.sr-only {
+    position: absolute;
+    left: -1000px;
+    top: auto;
+    width: 1px;
+    height: 1px;
+    overflow: hidden;
+}
+
 ul {list-style-type: none;}
 
 a {text-decoration: none;}
