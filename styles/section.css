@@ -1,0 +1,40 @@
+@import url('https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,200;0,9..40,400;0,9..40,600;0,9..40,900;1,9..40,200;1,9..40,400;1,9..40,600;1,9..40,900&display=swap');
+
+.SkewSection {
+    position: relative;
+    padding-top: min( var(--SkewHeight) , var(--SkewSafeGap) );
+    padding-bottom: calc( var(--SkewHeight) + var(--SkewSafeGap) );
+    isolation: isolate;
+}
+
+.SkewSection > .content {
+    z-index: 1;
+}
+
+
+.SkewSection::before{
+    content: '';
+    position: absolute;
+    width: 100vw;
+    height: var(--SkewHeight);
+    transform: skewY(-5deg) translateY(-50%);
+    top: 0;
+    left: 0;
+    z-index: -1;
+}
+
+
+.SkewSection:nth-of-type(1),
+.SkewSection:nth-of-type(1)::before{
+    background-color: white;
+}
+
+.SkewSection:nth-of-type(2),
+.SkewSection:nth-of-type(2)::before{
+    background-color: hsl(213, 13%, 84%);
+}
+
+.SkewSection:nth-of-type(3),
+.SkewSection:nth-of-type(3)::before{
+    background-color: #3A4D39;
+}

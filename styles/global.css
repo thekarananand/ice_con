@@ -1,228 +1,51 @@
-@import url('https://fonts.googleapis.com/css2?family=Rubik:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
-@import url('commonClasses.css');
-
+@import url('https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,200;0,9..40,400;0,9..40,600;0,9..40,900;1,9..40,200;1,9..40,400;1,9..40,600;1,9..40,900&display=swap');
 
 :root {
-    --nav-height: 3.5rem;
-    --section-height: calc(100dvh - var(--nav-height));
+    --hsl-font-color: 0, 0%, 0%; 
+    --hsl-bg-color-1: 255, 255, 255; 
 
-    --w-phone: 720px;
-    --w-tablet: 1080px;
+    --fw-thin  : 200;
+    --fw-normal: 400;
+    --fw-bold  : 600;
+    --fw-absurd: 900;
+
+    --side-padding : 20px;
+    --content-width: min(100ch, calc(100vw - 2 * var(--side-padding)));
+
+    --SkewHeight: 8.75vw;
+    --SkewSafeGap: 3em;
+
+    --hero-height: 400px; /* placeHolder */
 }
 
 
-header{
-    position: absolute;
-    top: 0;
-    z-index: 80;
-    width: 100%;
-
-    background-color: white;
-    border-bottom: 1px solid hsl(0, 0%, 20%, 50%);
-    /* box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.3); */
+* {
+    font-weight: var(--fw-normal);
+    color: hsl(var(--hsl-font-color));
+    font-family:  'DM Sans', Verdana, 'Segoe UI', Helvetica, Arial, sans-serif;
+    padding: 0;
+    margin: 0;
 }
 
-header .Brand a {
+.content-container {
     display: flex;
-}
-
-header a {
-    width: 100%;
-    height: 100%;
-}
-
-header .Brand img {
-    height: 2.8rem;
-    width: 2.8rem;
-    padding-inline: 0.5rem;
-}
-
-header .Brand .Brand-text h2{
-    font-size: 1.1rem;
-    font-weight: 500;
-}
-header .Brand .Brand-text div{
-    font-size: 0.9rem;
-}
-
-
-header > *,
-header .right,
-header ul,
-header li {
-    height: var(--nav-height);
-}
-
-header li,
-header li a {
-    display: flex;
+    justify-content: center;
     align-items: center;
-        
 }
 
-header li {
-    padding-inline: 0.6rem;
+.content {
+    width: var(--content-width);
 }
 
-header li:hover{
-    background-color: hsla(0, 0%, 0%, 0.1);    
-}
-
-#nav_toggle {
-
-    display: none;
-
-
-    position: absolute;
-    z-index: 200;
-    translate: -50% -50%;
-    top: 1.8rem;
-    right: 0rem;
-
-    height: 2rem;
-    width: 2rem;
-    border: none; 
-    
-    cursor: pointer;
-}
-
-#blank_div{
-    display: none;
-    position: absolute;
-    height: 100dvh;
-    width: 100vw;
-    background: rgba(0, 0, 0, 0.3);
-    z-index: 90;
-    inset: 0;
-
-    transition: 300ms ease-out;
-}
-
-@media (max-width: 900px) {
-
-    nav {
-
-        /* transform: translateX(0%); */
-
-        position: absolute;
-        top: 0;
-        right: 0;
-        z-index: 100;
-        background-color: rgba(255, 255, 255);
-        min-height: 100vh; 
-        
-        overflow: hidden;
-        border-left: 1px solid hsl(0, 0%, 20%, 50%);
-
-        transition: 300ms ease-out;
-
-        width: 0px;
-        overflow: hidden;
-    }
-
-    nav[data-visible="true"] {
-
-        /* transform: translateX(0%); */
-        
-        width: min( 30ch , calc(100% - 40%));
-    }
-    
-    #blank_div[data-visible="true"]{
-        display: block;
-    }
-
-    nav ul {
-        padding-top: min(6rem, 30dvh);
-        flex-direction: column;
-    }
-    
-    nav li {
-        width: calc(100% - 2rem);
-        padding: 1rem;
-    }
-
-    
-    #nav_toggle {
-        display: block;
-        background: none;
-        background-image: url(/menu.svg);
-        background-size: cover;
-    }
-
-    #nav_toggle[data-expanded='true'] {
-        background-image: url(/close.svg);
-    }
-
-
-}
-
-main {
-    position: absolute;
-    top: var(--nav-height);
-
-    height: var(--section-height);
-    width: 100vw;
-
-    scroll-behavior: smooth;
-    overflow-y: scroll;
-
-    background-color: rgb(240, 240, 240);
-    overflow-x: hidden;
-}
-
-main::-webkit-scrollbar {
-    display: none;
-}
-
-main{
-    -ms-overflow-style: none;
-    scrollbar-width: none;
-    scroll-behavior: smooth;
-} 
-
-section {
-    height: var(--section-height);
-    width: 100vw;
+.HeroSection {
+    padding-bottom: var(--SkewHeight);
+    height: var(--hero-height);
     position: relative;
 }
 
-section > * {
+.HeroSection .HeroImg {
     position: absolute;
-    top: 0;
-    height: 100%;
     width: 100%;
+    height: 100%;
     object-fit: cover;
-    z-index: 2;
-    overflow: hidden;
-}
-
-section > .data {
-    top: 0;
-    z-index: 5;
-}
-
-/*  Hero Section */
-
-#hero {
-    background-color: black;
-}
-
-#hero * {
-    color: white;
-}
-
-#hero > img {
-    opacity: 0.25;
-}
-
-#hero .dots{
-    background-size: 20px;
-    opacity: 0.15;
-    background-image: url(pattern.png);
-}
-
-/*  Temporary Classes */
-
-footer {
-    height: 50dvh;
 }

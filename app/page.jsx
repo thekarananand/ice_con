@@ -1,58 +1,47 @@
-import _Footer_ from '@/components/_footer_'
+
 import Image from 'next/image'
 
-import hero_bg from '../public/sample_hero_bg.png'
+import hero_bg from '../public/Cover.png'
 
 
-const _PageContent_ = () => {
+const PageContent = () => {
     return (
         <main>
-            <section id='hero' className='_anchor_'>
-            
-                <Image alt='' src={ hero_bg }/>
-
-                <div className='.dots z-4'>
-
-                </div>
-
-                <div className="data">
-                    <h1>E2A Conference </h1>
-                </div>
-            </section>
-            <section id='about' className='_anchor_'>
-                <div className="data">
-                    ABOUT #WELCOME
-                </div>
-            </section>
-            <section className='_anchor_'>
-                <div className="data">
-                    IMPORTANT DATES
-                </div>
-            </section>
-            <section id='topics' className='_anchor_'>
-                <div className="data">
-                    CALL FOR PAPERS
-                </div>
-            </section>
-            <section>
-                <div className="data">
-                    SUBMIT
-                </div>
-            </section>
-            <section>
-                <div className="data">
-                    SPONSORS
-                </div>
-            </section>
-            <section>
-                <div className="data">
-                    VENUE
-                </div>
+            <section className="HeroSection">
+                <Image
+                    className="HeroImg"
+                    src={hero_bg}
+                    width="100vw"
+                    alt="A Picture of NIT Jalandhar"/>
             </section>
             
-            <_Footer_/>
+            <div className='SkewSection'>
+                <section className="content-container">
+                    <div className="content">
+                        <h2>
+                            Hello
+                        </h2>
+                        Lorem ipsum dolor sit, amet consectetur adipisicing elit. Modi magnam ex enim vitae? Molestias magnam, nihil accusamus officiis laborum voluptatum nobis impedit amet aliquam tenetur. Minima ipsum eius voluptates dolore!
+                    </div>
+                </section>
+                <section className="content-container">
+                <div className="content">
+                        <h2>
+                            Hello
+                        </h2>
+                        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eveniet vel vitae ipsa? Corrupti doloribus nostrum vero, nam voluptatibus dignissimos voluptates excepturi illo ex maiores itaque neque ut numquam nulla ullam.
+                    </div>
+                </section>
+            </div>
+
+
+            <section className="SkewSection content-container">
+            <div className="content">
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Amet assumenda ducimus facilis voluptatem accusamus dicta voluptates. Facilis aspernatur autem deleniti asperiores, aliquam labore deserunt fugiat veritatis? Vel assumenda dolores molestias?
+                </div>
+            </section>
         </main>
     )
 }
 
-export default _PageContent_
+export default PageContent

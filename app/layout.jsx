@@ -1,12 +1,14 @@
 import _PageContent_ from './page'
-import _Nav_ from '@/components/_nav_'
+import TheNavigation from '@/components/TheNavigation'
+import TheFooter from '@/components/TheFooter'
 
 import '@/styles/global.css'
-
-
+import '@/styles/commonClasses.css'
+import '@/styles/header.css'
+import '@/styles/section.css'
 
 export const metadata = {
-    title: "ICE CONFERENCE'24",
+    title: "E2A Conference",
     description: "ICE CONFERENCE'24"
 }
 
@@ -15,8 +17,9 @@ const RootLayout = ({ children }) => {
         <html lang='en'>
             <body>
                 
-                <_Nav_/>
+                <TheNavigation/>
                 { children }
+                <TheFooter/>
 
             </body>
         </html>

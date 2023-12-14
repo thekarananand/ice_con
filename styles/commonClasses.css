@@ -26,15 +26,6 @@ body{
 */
 
 
-* {
-    padding: 0;
-    margin: 0;
-    font-size: 1rem;
-    font-family: 'Rubik', sans-serif;
-    color: black;
-    font-weight: 400;
-}
-
 .sr-only {
     position: absolute;
     left: -1000px;
@@ -46,7 +37,7 @@ body{
 
 ul {list-style-type: none;}
 
-a {text-decoration: none;}
+.no-td, .no-td * {text-decoration: none;}
 
 .flex {display: flex;}
 

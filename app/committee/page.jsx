@@ -1,4 +1,4 @@
-import _Footer_ from '@/components/_footer_'
+import _Footer_ from '@/components/theNavigation'
 
 const _PageContent_ = () => {
     return (
