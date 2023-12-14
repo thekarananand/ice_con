@@ -3,13 +3,23 @@
 
 // import nitjlogo from '../public/nitj_logo.png'
 
+
+import Image from 'next/image'
+
+import hero_bg from '../public/Cover.png'
+
 // import { imageOptimizer } from 'next/dist/server/image-optimizer'
+
 
 const TheHeroSection = () => {
     return (
-        <header>
-
-        </header>
+        <section className="HeroSection">
+            <Image
+                className="HeroImg"
+                src={hero_bg}
+                width="100vw"
+                alt="A Picture of NIT Jalandhar"/>
+        </section>
     )
 }
 

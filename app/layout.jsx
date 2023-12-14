@@ -1,6 +1,7 @@
-import _PageContent_ from './page'
+import PageContent from './page'
 import TheNavigation from '@/components/TheNavigation'
 import TheFooter from '@/components/TheFooter'
+
 
 import '@/styles/global.css'
 import '@/styles/commonClasses.css'

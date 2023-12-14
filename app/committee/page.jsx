@@ -1,6 +1,4 @@
-import _Footer_ from '@/components/theNavigation'
-
-const _PageContent_ = () => {
+const PageContent = () => {
     return (
         <main>
             <section>
@@ -8,10 +6,8 @@ const _PageContent_ = () => {
                     Committee
                 </h1>
             </section>
-            
-            <_Footer_/>
         </main>
     )
 }
 
-export default _PageContent_
+export default PageContent
