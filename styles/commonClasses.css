@@ -25,7 +25,6 @@ body{
 
 */
 
-
 .sr-only {
     position: absolute;
     left: -1000px;
@@ -37,7 +36,14 @@ body{
 
 ul {list-style-type: none;}
 
+a {
+    cursor: pointer;
+    text-decoration: underline;
+}
+
 .no-td, .no-td * {text-decoration: none;}
+
+.inline {display: inline;}
 
 .flex {display: flex;}
 
@@ -49,7 +55,11 @@ ul {list-style-type: none;}
 
 .jcsb {justify-content: space-between;}
 
+.jce {justify-content: end;}
+
 .aic {align-items: center;}
+
+.aie {align-items: end;}
 
 .mono {font-family: 'JetBrains Mono', monospace;}
 
@@ -86,3 +96,7 @@ ul {list-style-type: none;}
 .w-fc{width: fit-content;}
 
 .h-fc{height: fit-content;}
+
+.w-100p{width: 100%;}
+
+.h-100p{height: 100%;}

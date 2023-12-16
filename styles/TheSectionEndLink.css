@@ -1,0 +1,13 @@
+.TheSectionEndLink {
+    box-sizing: border-box;
+    margin-top: 20px;
+}
+
+.TheSectionEndLink a {
+    padding: .75ch 1rem;
+    font-size: 1.1rem;
+    border: 1px solid rgba(0, 0, 0, 0.2);
+    border-radius: calc( .5 * (1.1rem + 1rem + 1rem) );
+    background-color: hsla(var(--hsl-accent-1), 0.3);
+    box-shadow: 3px 3px 10px rgba(50, 50, 93, 0.25);
+}

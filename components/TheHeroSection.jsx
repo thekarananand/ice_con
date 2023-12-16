@@ -1,24 +1,27 @@
 // import Image from 'next/image'
 // import Script from 'next/script'
 
-// import nitjlogo from '../public/nitj_logo.png'
-
+import '@/styles/TheHeroSection.css'
 
 import Image from 'next/image'
-
 import hero_bg from '../public/Cover.png'
 
-// import { imageOptimizer } from 'next/dist/server/image-optimizer'
-
-
-const TheHeroSection = () => {
+const TheHeroSection = (props) => {
     return (
-        <section className="HeroSection">
-            <Image
+        <section className="HeroSection content-container">
+
+            <div className="text content">
+                <span className='smallText'>{ props.smallText }</span>
+                <h1 className='largeText'>{ props.largeText }</h1>
+                { props.buttonsArray }            
+            </div>
+           <Image
                 className="HeroImg"
                 src={hero_bg}
-                width="100vw"
-                alt="A Picture of NIT Jalandhar"/>
+                width="80vw"
+                sizes="80vw"
+                alt="A Picture of NIT Jalandhar"
+            />
         </section>
     )
 }
