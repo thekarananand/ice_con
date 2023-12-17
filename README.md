@@ -32,7 +32,7 @@
 - **Step 1**: Download the Latest Dependencies (i.e., node_modules)
 
     ``` bash
-    npm audit fix --force
+    npm audit fix
     npm install
     ```
     > **Node.js** must be installed!

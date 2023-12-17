@@ -14,7 +14,7 @@
     ```
     git clone https://www.github.com/thekarananand/ice_con.git
     cd /ice_con
-    npm audit fix --force
+    npm audit fix
     npm install
     npm run build
     ```
