@@ -1,8 +1,8 @@
-const TheSectionEndLink = (props) => {
+const TheSectionEndLink = ({ link="", text="" }) => {
     return (
         <div className="TheSectionEndLink w-100p flex jce">
-            <a href={props.link} className="no-td flex-v jcc aic">
-                {props.text}
+            <a href={ link } className="no-td flex-v jcc aic">
+                { text }
             </a>
         </div>
     )

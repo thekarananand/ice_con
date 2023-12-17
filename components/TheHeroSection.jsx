@@ -3,14 +3,14 @@ import '@/styles/TheHeroSection.css'
 import Image from 'next/image'
 import hero_bg from '../public/Cover.png'
 
-const TheHeroSection = (props) => {
+const TheHeroSection = ({ smallText = "", largeText = "", buttonsArray="" }) => {
     return (
         <section className="HeroSection content-container">
 
             <div className="text content">
-                <span className='smallText'>{ props.smallText }</span>
-                <h1 className='largeText'>{ props.largeText }</h1>
-                { props.buttonsArray }            
+                <span className='smallText'>{ smallText }</span>
+                <h1 className='largeText'>{ largeText }</h1>
+                { buttonsArray }            
             </div>
            <Image
                 className="HeroImg"
