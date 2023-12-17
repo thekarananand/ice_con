@@ -22,5 +22,5 @@
 - **Step 3** : Start the Deployment 
 
     ```
-    npm run build
+    npm run start
     ```
