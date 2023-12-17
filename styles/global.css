@@ -74,6 +74,10 @@ span {
     text-align: justify;
 }
 
+#timeline {
+    margin-bottom: var(--SkewSafeGap);
+}
+
 #timeline ul {
     border-left: 1px solid hsl(var(--hsl-accent-1));
     margin-left: calc( .5 * var(--line-spacing));
@@ -167,7 +171,7 @@ span {
 }
 
 #sponsors {
-    margin-top: var(--SkewSafeGap);
+    margin-block: var(--SkewSafeGap);
 } 
 
 #sponsors ul {
