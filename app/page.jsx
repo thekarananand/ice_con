@@ -90,7 +90,7 @@ const PageContent = () => {
                                         alt="Siemens" />
                                     </li>
                                 </ul>
-                                <TheSectionEndLink link="/sponsors" text="and Many More..." />
+                                <TheSectionEndLink link="/sponsors" text="and Many More..."/>
                             </div>
                         </section>
                     </div>

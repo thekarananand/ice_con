@@ -1,3 +1,5 @@
+import '@/styles/TheSectionEndLink.css'
+
 const TheSectionEndLink = ({ link="", text="" }) => {
     return (
         <div className="TheSectionEndLink w-100p flex jce">
