@@ -1,6 +1,8 @@
+import dm_sans from '@/components/TheFont'
+
 const TheFooter = () => {
     return (
-        <footer className="content-container">
+        <footer className={ dm_sans.className + " content-container" }>
             <div className="content">
                 <a href="">Link 1</a>
                 <a href="">Link 2</a>

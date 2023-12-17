@@ -1,11 +1,11 @@
+// Next Image Lib
+import Image from 'next/image'
 
-
-import TheHeroSection from '@/components/TheHeroSection'
-import TheSectionEndLink from '@/components/TheSectionEndLink'
-
+// SVG Components
 import addtocalender from "@/public/addtocalender.svg"
 import ticket from "@/public/ticket.svg"
 
+// Sponsors Components
 import amazon from "@/public/sponsors/amazon.svg"
 import google from "@/public/sponsors/google.svg"
 import microsoft from "@/public/sponsors/microsoft.svg"
@@ -13,11 +13,16 @@ import mit from "@/public/sponsors/mit.svg"
 import texas from "@/public/sponsors/texas.svg"
 import siemens from "@/public/sponsors/siemens.svg"
 
-import Image from 'next/image'
+// Next Font Custom Components
+import dm_sans from '@/components/TheFont'
+
+// Custom Components
+import TheHeroSection from '@/components/TheHeroSection'
+import TheSectionEndLink from '@/components/TheSectionEndLink'
 
 const PageContent = () => {
     return (
-        <main>
+        <main className={dm_sans.className}>
 
             <TheHeroSection
                 smallText='WELCOME T0'

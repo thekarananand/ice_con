@@ -1,6 +1,3 @@
-// import Image from 'next/image'
-// import Script from 'next/script'
-
 import '@/styles/TheHeroSection.css'
 
 import Image from 'next/image'

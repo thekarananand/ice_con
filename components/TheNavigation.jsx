@@ -1,15 +1,13 @@
 import Image from 'next/image'
-// import Script from 'next/script'
-
 import nitjlogo from '../public/nitj_logo.png'
-
-// import { imageOptimizer } from 'next/dist/server/image-optimizer'
 
 import '@/styles/TheNavigation.css'
 
+import dm_sans from '@/components/TheFont'
+
 const TheNavigation = () => {
     return (
-        <header className="content-container">
+        <header className={ dm_sans.className + " content-container" }>
             <nav className="content flex aic jcsb">
                 <a href="" className='left no-td flex jcc aic gap-5px'>
                     <Image

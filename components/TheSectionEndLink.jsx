@@ -1,6 +1,3 @@
-
-import '@/styles/TheSectionEndLink.css'
-
 const TheSectionEndLink = (props) => {
     return (
         <div className="TheSectionEndLink w-100p flex jce">
