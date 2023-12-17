@@ -1,6 +1,6 @@
 {
   "name": "E2A Conference Website",
-  "version": "0.1.0",
+  "version": "Prerelease",
   "private": true,
   "scripts": {
     "dev": "next dev",

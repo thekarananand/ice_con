@@ -136,8 +136,7 @@ span {
     transform: translateY( -50% ) translateX( -.5rem );
 }
 
-#timeline li:hover a::before,
-#timeline li:focus-within a::before {
+#timeline li:hover a::before {
     content: 'Add to Google Calender';
     position: absolute;
     top: -2.2rem;
@@ -212,21 +211,29 @@ span {
 #keynotes li ,
 #callForPapers li {
     box-sizing: border-box;
-    display: flex;
-    flex-direction: column;
+    display: grid;
+    grid-template-columns: 7rem auto;
     background: white;
     border: 3px solid white;
-    border-radius: 0.5rem;
-    box-shadow: 3px 3px 10px rgba(50, 50, 93, 0.25);
+    border-radius: 6px;
+    box-shadow: 3px 3px 15px rgba(50, 50, 93, 0.25);
+    overflow: hidden;
 }
 
 #keynotes li .text,
 #callForPapers li .text{
     margin: 1px;
-    padding: 1ch 1rem;
+    padding: .5ch .5rem;
     box-sizing: border-box;
-    display: grid;
-    gap: .1rem;
+    display: flex;
+    flex-direction: column;
+    gap: .2rem;
+
+}
+
+#keynotes li .text > *,
+#callForPapers li .text > *{
+    height: fit-content;
 }
 
 #keynotes li .text .largeText,
@@ -243,9 +250,18 @@ span {
 }
 
 #keynotes li .text .smallText{
-    height: 2rem
+    height: 2.2rem
 }
 
+#keynotes li img,
+#callForPapers li .art {
+    width: 7rem;
+    height: 7rem;
+    border-radius: 4px;
+    object-fit: cover;
+    background-color: hsl(var(--hsl-bg-color-3));
+
+}
 
 
 @media (width > 130ch) {

@@ -1,3 +1,10 @@
+// Next Font Custom Components
+import dm_sans from '@/components/TheFont'
+
+// Custom Components
+import TheHeroSection from '@/components/TheHeroSection'
+import TheSectionEndLink from '@/components/TheSectionEndLink'
+
 // Next Image Lib
 import Image from 'next/image'
 
@@ -13,12 +20,13 @@ import mit from "@/public/sponsors/mit.svg"
 import texas from "@/public/sponsors/texas.svg"
 import siemens from "@/public/sponsors/siemens.svg"
 
-// Next Font Custom Components
-import dm_sans from '@/components/TheFont'
-
-// Custom Components
-import TheHeroSection from '@/components/TheHeroSection'
-import TheSectionEndLink from '@/components/TheSectionEndLink'
+// Speakers
+import Prof_Weerakorn_Ongsakul from '@/public/speaker/Prof_Weerakorn_Ongsakul.jpeg'
+import Prof_Marta_Zurek_Mortka from '@/public/speaker/Prof_Marta_Zurek_Mortka.jpg'
+import Prof_Chris_Mi from '@/public/speaker/Prof_Chris_Mi.jpg'
+import Prof_Nakai_Hirotaka from '@/public/speaker/Prof_Nakai_Hirotaka_Placeholder.jpeg'
+import Dr_Ajay_Mathur from '@/public/speaker/Dr_Ajay_Mathur.jpeg'
+import Mr_Subrahmanyam_Pulipaka from '@/public/speaker/Mr_Subrahmanyam_Pulipaka.jpg'
 
 const PageContent = () => {
     return (
@@ -228,42 +236,42 @@ const PageContent = () => {
                         </h2>
                         <ul>
                             <li>
-                                <Image alt='A Photograph of Prof. Weerakorn Ongsakul'/>
+                                <Image src={ Prof_Weerakorn_Ongsakul } width="50vw" alt='A Photograph of Prof. Weerakorn Ongsakul'/>
                                 <div className="text">
                                     <span className="largeText">Prof. Weerakorn Ongsakul </span>
                                     <span className="smallText">Department of Energy, AIT, Thailand.</span>
                                 </div>
                             </li>
                             <li>
-                                <Image alt='A Photograph of Prof. Marta Zurek-Mortka'/>
+                                <Image src={ Prof_Marta_Zurek_Mortka } width="50vw" alt='A Photograph of Prof. Marta Zurek-Mortka'/>
                                 <div className="text">
                                     <span className="largeText">Prof. Marta Zurek-Mortka </span>
                                     <span className="smallText">Institute for Sustainable Technologies, Radom, Poland.</span>
                                 </div>
                             </li>
                             <li>
-                                <Image alt='A Photograph of Prof. Chris Mi'/>
+                                <Image src={ Prof_Chris_Mi } width="50vw" alt='A Photograph of Prof. Chris Mi'/>
                                 <div className="text">
                                     <span className="largeText">Prof. Chris Mi </span>
                                     <span className="smallText">San Diego State University, USA.</span>
                                 </div>
                             </li>
                             <li>
-                                <Image alt='A Photograph of Prof. Nakai Hirotaka'/>
+                                <Image  src={ Prof_Nakai_Hirotaka } width="50vw" alt='A Photograph of Prof. Nakai Hirotaka'/>
                                 <div className="text">
                                     <span className="largeText">Prof. Nakai Hirotaka </span>
                                     <span className="smallText">High Energy Accelerator Research Organization (KEK), Japan.</span>
                                 </div>
                             </li>
                             <li>
-                                <Image alt='A Photograph of Dr Ajay Mathur'/>
+                                <Image  src={ Dr_Ajay_Mathur } width="50vw" alt='A Photograph of Dr Ajay Mathur'/>
                                 <div className="text">
-                                    <span className="largeText">Dr Ajay Mathur </span>
+                                    <span className="largeText">Dr. Ajay Mathur </span>
                                     <span className="smallText">Director General, International Solar Alliance.</span>
                                 </div>
                             </li>
                             <li>
-                                <Image alt='A Photograph of Mr. Subrahmanyam Pulipaka'/>
+                                <Image  src={ Mr_Subrahmanyam_Pulipaka } width="50vw" alt='A Photograph of Mr. Subrahmanyam Pulipaka'/>
                                 <div className="text">
                                     <span className="largeText">Mr. Subrahmanyam Pulipaka </span>
                                     <span className="smallText">CEO, National Solar Energy Federation of India.</span>

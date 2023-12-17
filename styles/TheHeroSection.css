@@ -24,9 +24,10 @@
 }
 
 .HeroSection .largeText{
-    font-size: 2rem;
+    font-size: 1.8rem;
     font-weight: var(--fw-absurd);
     max-width: 18ch;
+
 }
 
 
