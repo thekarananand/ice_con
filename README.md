@@ -13,7 +13,7 @@
 - **Step 1**: Download the Latest Dependencies (i.e., node_modules)
 
     ``` bash
-    npm audit fix --force
+    npm audit fix
     npm install
     ```
     > **Node.js** must be installed!
@@ -52,3 +52,17 @@
 ## Run/Build it on Docker Container (not working well!!... 🤕)
 
 I have a dedicated page for that 👉👉 [/docker/README.md](https://github.com/thekarananand/ice_con/tree/main/docker)
+
+## Opt Out of Next Telemetry
+
+Docs : [nextjs.org/telemetry](https://nextjs.org/telemetry)
+
+- Opt Out
+    ```
+    npx next telemetry disable
+    ```
+
+- Check Status
+    ```
+    npx next telemetry status
+    ```
