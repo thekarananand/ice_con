@@ -1,5 +1,3 @@
-import Head from "next/head"
-
 import PageContent from './page'
 import TheNavigation from '@/components/TheNavigation'
 import TheFooter from '@/components/TheFooter'
@@ -14,15 +12,9 @@ export const metadata = {
     description: "ICE CONFERENCE'24"
 }
 
-
 const RootLayout = ({ children }) => {
     return (
-
         <html lang='en'>
-            <Head>
-                <title>Skill Up | Credit Based Learning</title>
-                <link rel="icon" href="/favicon.ico" />
-            </Head>
             <body>
                 
                 <TheNavigation/>
