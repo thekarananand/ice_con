@@ -32,7 +32,7 @@
 .content {
     width: var(--content-width);
 }
-
+/* 
 .SkewSection:last-of-type {
     padding-bottom: var(--SkewSafeGap);
-}
+} */

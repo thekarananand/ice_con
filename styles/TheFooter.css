@@ -1,0 +1,109 @@
+ footer {
+    --link-blue: #00D4FF;
+    --border-line: 1px solid hsla(0, 0%, 100%, 0.4);
+
+    padding-top: var(--side-padding) !important;
+    padding-bottom: 0px !important;
+    background-color: var(--hsl-bg-color-4);
+}
+footer::before {
+    background-color: var(--hsl-bg-color-4);
+}
+
+footer .content * {
+    font-size: 0.9rem;
+    color: white;
+    padding: 0;
+    margin: 0;
+    font-style: normal;
+    text-align: left !important;
+}
+
+footer a {
+    width: fit-content;
+    color: var(--link-blue) !important;
+}
+
+footer .brand {
+    text-decoration: none;
+}
+
+footer .content  h2 {
+    font-size: 1.4rem;
+    font-weight: var(--fw-absurd);
+}
+
+footer .content  h3 {
+    font-size: 1.1rem;
+    font-weight: var(--fw-bold);
+    margin-block: .5rem; 
+}
+
+footer .iconed {
+    display: flex;
+    gap: 5px;
+}
+
+footer .iconed img {
+    position: relative;
+    top: -.2rem;
+    height: 1.5rem;
+}
+
+footer .venue address { max-width: 35ch; }
+
+footer a p { max-width: 26ch; }
+
+footer .buffer-a {
+    display: grid;
+    gap: var(--side-padding);
+}
+
+footer .buffer-a1 {
+    display: grid;
+    gap: var(--side-padding);
+} 
+
+footer .contact {
+    margin-top: var(--side-padding);
+}
+
+footer .contact .name {
+    font-size: 1rem;
+    font-weight: var(--fw-bold);
+}
+
+footer .contact ul{
+    display: grid;
+    gap: 1rem;
+    padding-bottom: var(--side-padding);
+}
+
+footer .contact li div{
+    /* border: 1px dashed red; */
+    display: grid;
+    gap: 0.1rem;
+    width: min(100%, 28ch);
+
+}
+
+footer .buffer-b {
+    padding-block: var(--side-padding); 
+    border-top: var(--border-line);
+}
+
+footer .buffer-b p { width: fit-content; }
+
+
+
+@media (width > 600px) {
+    footer .buffer-a {
+        display: grid;
+        grid-template-columns: auto calc(35ch + var(--side-padding));
+    }
+    footer .buffer-a .buffer-a2 {
+        padding-left: var(--side-padding);
+        border-left: var(--border-line);
+    }
+
+}

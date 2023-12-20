@@ -1,26 +1,23 @@
 # Run/Build it on Docker Container
 
-- **Step 0** : Spin a ``debian`` (on any OS) Container
+- **To Do** : Make a  Docker File 
 
-- **Step 1** : Install ``git`` and ``npm`` 
+- Here's The Deployment Script
 
-    ```
-    apt update
-    apt install git npm -y
-    ```
+``` bash
+# Install git, npm.
+apt install git npm -y
 
-- **Step 2** : Download Code & Build
+# Clone this repo.
+git clone https://www.github.com/thekarananand/ice_con.git
 
-    ```
-    git clone https://www.github.com/thekarananand/ice_con.git
-    cd /ice_con
-    npm audit fix
-    npm install
-    npm run build
-    ```
+# Build Process.
+cd ice_con
+npm audit fix
+npm install 
+npx next telemetry disable # Opt-Out of Next/Telemetry
+npm run build
 
-- **Step 3** : Start the Deployment 
-
-    ```
-    npm run start
-    ```
+# Start the Server
+npm run start
+```

@@ -4,6 +4,7 @@ import PageContent from './page'
 import TheNavigation from '@/components/TheNavigation'
 import TheFooter from '@/components/TheFooter'
 
+
 import '@/styles/commonClasses.css'
 import '@/styles/sections.css'
 

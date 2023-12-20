@@ -29,6 +29,9 @@ import Dr_Ajay_Mathur from '@/public/speaker/Dr_Ajay_Mathur.jpeg'
 import Mr_Subrahmanyam_Pulipaka from '@/public/speaker/Mr_Subrahmanyam_Pulipaka.jpg'
 
 const PageContent = () => {
+
+    const speakerPicSize = "30vw"
+
     return (
         <main className={dm_sans.className}>
 
@@ -42,7 +45,7 @@ const PageContent = () => {
                     </div>
                 } />
 
-            <div className='SkewSection flex-v SkewSafeGap'>
+            <div className='S1 SkewSection flex-v SkewSafeGap'>
                 <div className="buffer">
                     <div className="buffer-1">
                         <section id="about" className="content-container">
@@ -181,7 +184,7 @@ const PageContent = () => {
                     </div>
                 </div>
             </div>
-            <div className='SkewSection flex-v SkewSafeGap'>
+            <div className='S2 SkewSection flex-v SkewSafeGap'>
                 <section id='callForPapers' className="content-container">
                     <div className="content">
                         <h2>
@@ -236,42 +239,42 @@ const PageContent = () => {
                         </h2>
                         <ul>
                             <li>
-                                <Image src={ Prof_Weerakorn_Ongsakul } width="40vw" alt='A Photograph of Prof. Weerakorn Ongsakul'/>
+                                <Image src={ Prof_Weerakorn_Ongsakul } width={ speakerPicSize } sizes={ speakerPicSize } alt='A Photograph of Prof. Weerakorn Ongsakul'/>
                                 <div className="text">
                                     <span className="largeText">Prof. Weerakorn Ongsakul </span>
                                     <span className="smallText">Department of Energy, AIT, Thailand.</span>
                                 </div>
                             </li>
                             <li>
-                                <Image src={ Prof_Marta_Zurek_Mortka } width="40vw" alt='A Photograph of Prof. Marta Zurek-Mortka'/>
+                                <Image src={ Prof_Marta_Zurek_Mortka } width={ speakerPicSize } sizes={ speakerPicSize } alt='A Photograph of Prof. Marta Zurek-Mortka'/>
                                 <div className="text">
                                     <span className="largeText">Prof. Marta Zurek-Mortka </span>
                                     <span className="smallText">Institute for Sustainable Technologies, Radom, Poland.</span>
                                 </div>
                             </li>
                             <li>
-                                <Image src={ Prof_Chris_Mi } width="40vw" alt='A Photograph of Prof. Chris Mi'/>
+                                <Image src={ Prof_Chris_Mi } width={ speakerPicSize } sizes={ speakerPicSize } alt='A Photograph of Prof. Chris Mi'/>
                                 <div className="text">
                                     <span className="largeText">Prof. Chris Mi </span>
                                     <span className="smallText">San Diego State University, USA.</span>
                                 </div>
                             </li>
                             <li>
-                                <Image  src={ Prof_Nakai_Hirotaka } width="40vw" alt='A Photograph of Prof. Nakai Hirotaka'/>
+                                <Image  src={ Prof_Nakai_Hirotaka } width={ speakerPicSize } sizes={ speakerPicSize } alt='A Photograph of Prof. Nakai Hirotaka'/>
                                 <div className="text">
                                     <span className="largeText">Prof. Nakai Hirotaka </span>
                                     <span className="smallText">High Energy Accelerator Research Organization (KEK), Japan.</span>
                                 </div>
                             </li>
                             <li>
-                                <Image  src={ Dr_Ajay_Mathur } width="40vw" alt='A Photograph of Dr Ajay Mathur'/>
+                                <Image  src={ Dr_Ajay_Mathur } width={ speakerPicSize } sizes={ speakerPicSize } alt='A Photograph of Dr Ajay Mathur'/>
                                 <div className="text">
                                     <span className="largeText">Dr. Ajay Mathur </span>
                                     <span className="smallText">Director General, International Solar Alliance.</span>
                                 </div>
                             </li>
                             <li>
-                                <Image  src={ Mr_Subrahmanyam_Pulipaka } width="40vw" alt='A Photograph of Mr. Subrahmanyam Pulipaka'/>
+                                <Image  src={ Mr_Subrahmanyam_Pulipaka } width={ speakerPicSize } sizes={ speakerPicSize } alt='A Photograph of Mr. Subrahmanyam Pulipaka'/>
                                 <div className="text">
                                     <span className="largeText">Mr. Subrahmanyam Pulipaka </span>
                                     <span className="smallText">CEO, National Solar Energy Federation of India.</span>
@@ -282,7 +285,7 @@ const PageContent = () => {
                         <div>
                             <TheSectionEndLink link="/tickets" text={
                                 <span className='flex jcc aic'>
-                                    <Image src={ticket} height={24} className='w-fc h-fc' alt=''/>
+                                    <Image src={ticket} height={32} sizes={32} className='w-fc h-fc' alt=''/>
                                     <span className='w-fc h-fc'>Get Your Tickets Now!</span>
                                 </span>
                             } />
@@ -290,7 +293,6 @@ const PageContent = () => {
                     </div>
                 </section>
             </div>
-
         </main>
     )
 }

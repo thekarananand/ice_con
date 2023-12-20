@@ -2,9 +2,11 @@
 
 :root {
     --hsl-font-color: 0, 0%, 0%; 
+    
     --hsl-bg-color-1: 0, 0%, 100%; 
     --hsl-bg-color-2: 213, 25%, 92%;
     --hsl-bg-color-3: 213, 20%, 84%;
+    --hsl-bg-color-4: hsl(213, 73%, 15%);
 
     /* color: hsl(hue, saturation, lightness) */
 
@@ -55,18 +57,18 @@ span {
     gap: var(--SkewSafeGap);
 }
 
-.SkewSection:nth-of-type(1),
-.SkewSection:nth-of-type(1)::before{
+.S1,
+.S1::before{
     background-color: hsl(var(--hsl-bg-color-1));
 }
 
-.SkewSection:nth-of-type(2),
-.SkewSection:nth-of-type(2)::before{
+.S2,
+.S2::before{
     background-color: hsl(var(--hsl-bg-color-2));
 }
 
-.SkewSection:nth-of-type(3),
-.SkewSection:nth-of-type(3)::before{
+.S3,
+.S3::before{
     background-color: hsl(var(--hsl-bg-color-3));
 }
 
@@ -263,8 +265,14 @@ span {
 
 }
 
+@media (width > 620px){
+    #sponsors ul {
+        grid-template-columns: calc(100%/3) calc(100%/3) calc(100%/3) ;
+    }
 
-@media (width > 130ch) {
+}
+
+@media (width > 1020px) {
 
     .SkewSection:nth-of-type(1){
         display: flex;
@@ -274,7 +282,7 @@ span {
 
     .SkewSection:nth-of-type(1) .buffer{
         display: grid;
-        grid-template-columns: 60ch calc( var(--content-width) - 6ch - 60ch);
+        grid-template-columns: calc(var(--content-width) - 5ch - 35ch) 35ch;
         gap: 5ch;
         width: var(--content-width);
         align-items: start;
@@ -289,11 +297,4 @@ span {
         position: sticky;
         top: calc(var(--header-height) + var(--SkewSafeGap));
     }
-
-    #sponsors ul {
-        grid-template-columns: calc(100%/3) calc(100%/3) calc(100%/3) ;
-    }
-
 }
-
-
