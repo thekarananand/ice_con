@@ -22,10 +22,7 @@ const TheFooter = () => {
                             Organized by <br />
                             <a href=''>Dr B R Ambedkar <br />National Institute of Technology, Jalandhar.</a>
                         </article>
-                        <article>
-                            in Joint Collabration with <br />
-                            <a href=''>Malaviya National Institute of Technology, Jaipur</a>
-                        </article>
+                        
 
                     </section>
                     <section className="buffer-a2">
