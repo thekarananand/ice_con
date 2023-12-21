@@ -54,7 +54,7 @@ const PageContent = () => {
                                     About E2A Conference
                                 </h2>
                                 <p>
-                                    The International Conference on Electrical, Electronics, and Automation (E2A) serves as a global hub where experts gather to explore, collaborate, and share groundbreaking research and innovations in the rapidly evolving fields of electrical engineering, electronics, and automation. E2A provides a vital platform for diverse professionals to exchange ideas and knowledge, fostering innovation and shaping a future powered by cutting-edge technologies. Join us at E2A to be part of this transformation journey towards a smarter, more connected, and automated world, where your contributions are essential in shaping the future.
+                                   The International Conference on Electrical, Electronics, and Automation (E2A) serves as a global hub where experts gather to explore, collaborate, and share groundbreaking research and innovations in the rapidly evolving fields of electrical engineering, electronics, and automation. E2A provides a vital platform for diverse professionals to exchange ideas and knowledge, fostering innovation and shaping a future powered by cutting-edge technologies. Join us at E2A to be part of this transformative journey towards a  smarter, more connected, and automated world, where your contributions are essential in shaping the future. Selected papers will be published in SCOPUS indexed proceedings
                                 </p>
                             </div>
                         </section>
@@ -113,62 +113,62 @@ const PageContent = () => {
                                 </h2>
                                 <ul className='flex-v gap-10px'>
                                     <li>
-                                        <span className="Date">February 1<sup>st</sup>, 2024 </span>
+                                        <span className="Date">June 15<sup>th</sup>, 2024 </span>
                                         <span className="Title">Paper Submission Begins</span>
                                         <a target='_blank' href="">
                                             <Image
                                                 src={addtocalender}
                                                 // width={ 170 }
                                                 height={32}
-                                                alt="Add to Google Calender" />
+                                                alt="Add to Google Calendar" />
                                         </a>
                                     </li>
                                     <li>
-                                        <span className="Date">April 30<sup>th</sup>, 2024 </span>
+                                        <span className="Date">August 16<sup>th</sup>, 2024 </span>
                                         <span className="Title">Paper Submission Ends</span>
                                         <a target='_blank' href="">
                                             <Image
                                                 src={addtocalender}
                                                 // width={ 170 }
                                                 height={32}
-                                                alt="Add to Google Calender" />
+                                                alt="Add to Google Calendar" />
                                         </a>
                                     </li>
                                     <li>
-                                        <span className="Date">July 1<sup>st</sup>, 2024 </span>
+                                        <span className="Date">November 10<sup>th</sup>, 2024 </span>
                                         <span className="Title">Review Process Ends</span>
                                         <a target='_blank' href="">
                                             <Image
                                                 src={addtocalender}
                                                 // width={ 170 }
                                                 height={32}
-                                                alt="Add to Google Calender" />
+                                                alt="Add to Google Calendar" />
                                         </a>
                                     </li>
                                     <li>
-                                        <span className="Date">July 13<sup>th</sup>, 2024 </span>
+                                        <span className="Date">November 25<sup>th</sup>, 2024 </span>
                                         <span className="Title">Camera Ready Paper</span>
                                         <a target='_blank' href="">
                                             <Image
                                                 src={addtocalender}
                                                 // width={ 170 }
                                                 height={32}
-                                                alt="Add to Google Calender" />
+                                                alt="Add to Google Calendar" />
                                         </a>
                                     </li>
                                     <li>
-                                        <span className="Date">August 16<sup>th</sup>, 2024 </span>
+                                        <span className="Date">December 27<sup>th</sup>, 2024 </span>
                                         <span className="Title">Conference Begins</span>
                                         <a target='_blank' href="">
                                             <Image
                                                 src={addtocalender}
                                                 // width={ 170 }
                                                 height={32}
-                                                alt="Add to Google Calender" />
+                                                alt="Add to Google Calendar" />
                                         </a>
                                     </li>
                                     <li>
-                                        <span className="Date">August 18<sup>th</sup>, 2024 </span>
+                                        <span className="Date">December 28<sup>th</sup>, 2024 </span>
                                         <span className="Title">Conference Ends</span>
                                         <a target='_blank' href="">
                                             <Image
@@ -238,13 +238,6 @@ const PageContent = () => {
                             Keynotes from Industry Experts
                         </h2>
                         <ul>
-                            <li>
-                                <Image src={ Prof_Weerakorn_Ongsakul } width={ speakerPicSize } sizes={ speakerPicSize } alt='A Photograph of Prof. Weerakorn Ongsakul'/>
-                                <div className="text">
-                                    <span className="largeText">Prof. Weerakorn Ongsakul </span>
-                                    <span className="smallText">Department of Energy, AIT, Thailand.</span>
-                                </div>
-                            </li>
                             <li>
                                 <Image src={ Prof_Marta_Zurek_Mortka } width={ speakerPicSize } sizes={ speakerPicSize } alt='A Photograph of Prof. Marta Zurek-Mortka'/>
                                 <div className="text">
