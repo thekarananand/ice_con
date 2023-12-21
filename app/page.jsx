@@ -21,7 +21,6 @@ import texas from "@/public/sponsors/texas.svg"
 import siemens from "@/public/sponsors/siemens.svg"
 
 // Speakers
-import Prof_Weerakorn_Ongsakul from '@/public/speaker/Prof_Weerakorn_Ongsakul.jpeg'
 import Prof_Marta_Zurek_Mortka from '@/public/speaker/Prof_Marta_Zurek_Mortka.jpg'
 import Prof_Chris_Mi from '@/public/speaker/Prof_Chris_Mi.jpg'
 import Prof_Nakai_Hirotaka from '@/public/speaker/Prof_Nakai_Hirotaka_Placeholder.jpeg'
