@@ -24,7 +24,7 @@ const TheFooter = () => {
                         </article>
                         <article>
                             in Joint Collabration with <br />
-                            <a href=''>Malaviya National Institute of Technology, Jaipur</a>
+                            <a href=''>Malaviya National Institute of Technology, Jaipur.</a>
                         </article>
 
                     </section>

@@ -4,10 +4,10 @@
 
     padding-top: var(--side-padding) !important;
     padding-bottom: 0px !important;
-    background-color: var(--hsl-bg-color-4);
+    background-color: hsl(var(--hsl-bg-color-4));
 }
 footer::before {
-    background-color: var(--hsl-bg-color-4);
+    background-color: hsl(var(--hsl-bg-color-4));
 }
 
 footer .content * {

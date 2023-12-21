@@ -1,12 +1,12 @@
 /* @import url('https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,200;0,9..40,400;0,9..40,600;0,9..40,900;1,9..40,200;1,9..40,400;1,9..40,600;1,9..40,900&display=swap'); */
 
 :root {
-    --hsl-font-color: 0, 0%, 0%; 
-    
-    --hsl-bg-color-1: 0, 0%, 100%; 
+    --hsl-font-color: 0, 0%, 0%;
+
+    --hsl-bg-color-1: 0, 0%, 100%;
     --hsl-bg-color-2: 213, 25%, 92%;
     --hsl-bg-color-3: 213, 20%, 84%;
-    --hsl-bg-color-4: hsl(213, 73%, 15%);
+    --hsl-bg-color-4: 213, 73%, 15%;
 
     /* color: hsl(hue, saturation, lightness) */
 
@@ -17,17 +17,17 @@
     color: #368ab5;
     color: #2f7ca2;
 
-    --fw-thin  : 200;
+    --fw-thin: 200;
     --fw-normal: 400;
-    --fw-bold  : 600;
+    --fw-bold: 600;
     --fw-absurd: 900;
 
-    --side-padding : 20px;
+    --side-padding: 20px;
     --content-width: min(100ch, calc(100vw - 2 * var(--side-padding)));
 
     --SkewHeight: 8.75vw;
     --SkewSafeGap: 3em;
-    
+
     --header-height: 4em;
 
 }
@@ -45,7 +45,7 @@
 }
 
 body {
-    overflow-x: hidden ;
+    overflow-x: hidden;
 }
 
 
@@ -53,22 +53,22 @@ span {
     display: block;
 }
 
-.SkewSafeGap{
+.SkewSafeGap {
     gap: var(--SkewSafeGap);
 }
 
 .S1,
-.S1::before{
+.S1::before {
     background-color: hsl(var(--hsl-bg-color-1));
 }
 
 .S2,
-.S2::before{
+.S2::before {
     background-color: hsl(var(--hsl-bg-color-2));
 }
 
 .S3,
-.S3::before{
+.S3::before {
     background-color: hsl(var(--hsl-bg-color-3));
 }
 
@@ -82,7 +82,7 @@ span {
 
 #timeline ul {
     border-left: 1px solid hsl(var(--hsl-accent-1));
-    margin-left: calc( .5 * var(--line-spacing));
+    margin-left: calc(.5 * var(--line-spacing));
     padding-left: var(--line-spacing);
     padding-block: 10px;
 }
@@ -104,21 +104,21 @@ span {
     width: .75rem;
     background-color: hsl(var(--hsl-accent-1));
     top: 50%;
-    left: calc( ( -1 * var(--line-spacing) ) - 1px);
-    transform: translate(-50% , -50%);
+    left: calc((-1 * var(--line-spacing)) - 1px);
+    transform: translate(-50%, -50%);
     border-radius: 50%;
     border: .5rem solid hsl(var(--hsl-accent-2));
     z-index: -1;
 }
 
 #timeline li .Date,
-#timeline li .Date sup{
+#timeline li .Date sup {
     font-weight: var(--fw-bold);
     font-size: 0.9rem;
     color: hsl(var(--hsl-accent-1));
 }
 
-#timeline li .Title{
+#timeline li .Title {
     margin-top: .1rem;
     font-weight: var(--fw-normal);
     font-size: 1.1rem;
@@ -134,8 +134,8 @@ span {
     background-color: hsla(var(--hsl-accent-1), 0.2);
     border-radius: 50%;
     aspect-ratio: 1;
-    height: calc( 100% - 1.5ch );
-    transform: translateY( -50% ) translateX( -.5rem );
+    height: calc(100% - 1.5ch);
+    transform: translateY(-50%) translateX(-.5rem);
 }
 
 #timeline li:hover a::before {
@@ -161,19 +161,19 @@ span {
     position: absolute;
     z-index: 1;
     top: -2.2rem;
-    transform: translate(50%,calc(50% - 2px));
+    transform: translate(50%, calc(50% - 2px));
     right: 50%;
     height: 2em;
     width: 2rem;
     background-color: hsl(var(--hsl-accent-1));
     clip-path: polygon(100% 40%, 0% 40%, 50% 80%);
     outline: none;
-    outline-color: transparent;     
+    outline-color: transparent;
 }
 
 #sponsors {
     margin-block: var(--SkewSafeGap);
-} 
+}
 
 #sponsors ul {
     display: grid;
@@ -182,7 +182,7 @@ span {
     border-left: 2px dashed hsla(var(--hsl-accent-2), 0.8);
 }
 
-#sponsors ul > * {
+#sponsors ul>* {
     border-right: 2px dashed hsla(var(--hsl-accent-2), 0.8);
     border-bottom: 2px dashed hsla(var(--hsl-accent-2), 0.8);
     display: flex;
@@ -210,7 +210,7 @@ span {
     gap: 10px;
 }
 
-#keynotes li ,
+#keynotes li,
 #callForPapers li {
     box-sizing: border-box;
     display: grid;
@@ -223,7 +223,7 @@ span {
 }
 
 #keynotes li .text,
-#callForPapers li .text{
+#callForPapers li .text {
     margin: 1px;
     padding: .5ch .5rem;
     box-sizing: border-box;
@@ -233,25 +233,25 @@ span {
 
 }
 
-#keynotes li .text > *,
-#callForPapers li .text > *{
+#keynotes li .text>*,
+#callForPapers li .text>* {
     height: fit-content;
 }
 
 #keynotes li .text .largeText,
-#callForPapers li .text .largeText{
+#callForPapers li .text .largeText {
     font-weight: var(--fw-normal);
     font-size: 1.1rem;
 }
 
 #keynotes li .text .smallText,
-#callForPapers li .text .smallText{
+#callForPapers li .text .smallText {
     font-weight: var(--fw-bold);
     font-size: 0.9rem;
     color: hsl(var(--hsl-accent-1));
 }
 
-#keynotes li .text .smallText{
+#keynotes li .text .smallText {
     height: 2.2rem
 }
 
@@ -265,36 +265,87 @@ span {
 
 }
 
-@media (width > 620px){
+@media (width > 620px) {
     #sponsors ul {
-        grid-template-columns: calc(100%/3) calc(100%/3) calc(100%/3) ;
+        grid-template-columns: calc(100%/3) calc(100%/3) calc(100%/3);
     }
 
 }
 
 @media (width > 1020px) {
 
-    .SkewSection:nth-of-type(1){
+    .SkewSection:nth-of-type(1) {
         display: flex;
         justify-content: center;
         align-items: center;
     }
 
-    .SkewSection:nth-of-type(1) .buffer{
+    .SkewSection:nth-of-type(1) .buffer {
         display: grid;
         grid-template-columns: calc(var(--content-width) - 5ch - 35ch) 35ch;
         gap: 5ch;
         width: var(--content-width);
         align-items: start;
     }
+
     .buffer-2 {
         /* position: relative; */
         /* border: 1px dashed red; */
         height: 100%;
     }
-    
-    #timeline{
+
+    #timeline {
         position: sticky;
         top: calc(var(--header-height) + var(--SkewSafeGap));
+    }
+}
+
+
+@media (width > 850px) {
+
+    #callForPapers ul {
+
+        --gap: 15px;
+        gap: var(--gap);
+        grid-template-columns: calc( (100% - var(--gap) ) / 2) calc( (100% - var(--gap) ) / 2);
+    }
+
+    #callForPapers ul li:first-of-type {
+        grid-column-start: 2;
+    }
+
+    #callForPapers ul li:nth-of-type(even) {
+        position: relative;
+        top: -4.8rem;
+    }
+
+    #callForPapers ul li {
+        grid-template-columns: auto;
+    }
+
+    #callForPapers ul li .art {
+        width: 100%;
+        height: 15rem;
+    }
+
+    #callForPapers ul li .text {
+        padding: 1ch 1rem;
+    }
+
+    #keynotes ul{
+
+        --gap: 15px;
+        gap: var(--gap);
+        grid-template-columns:  repeat(3 , calc( (100% - 2 * var(--gap) ) / 3));
+    }
+
+    #keynotes ul li {
+        grid-template-columns: auto;
+    }
+
+    #keynotes ul li img {
+        width: 100%;
+        height: 100%;
+        aspect-ratio: 1 !important;
     }
 }
