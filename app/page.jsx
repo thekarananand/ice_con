@@ -27,6 +27,10 @@ import Prof_Nakai_Hirotaka from '@/public/speaker/Prof_Nakai_Hirotaka_Placeholde
 import Dr_Ajay_Mathur from '@/public/speaker/Dr_Ajay_Mathur.jpeg'
 import Mr_Subrahmanyam_Pulipaka from '@/public/speaker/Mr_Subrahmanyam_Pulipaka.jpg'
 
+// Speakers
+import t4 from '@/public/trackIcons/t4.svg'
+
+
 const PageContent = () => {
 
     const speakerPicSize = "30vw"
@@ -213,7 +217,9 @@ const PageContent = () => {
                                 </div>
                             </li>
                             <li>
-                                <div className="art"></div>
+                                <div className="art">
+                                    <Image src={t4}/>
+                                </div>
                                 <div className="text">
                                     <span className="smallText">Track 4 </span>
                                     <span className="largeText">Emerging Technologies</span>

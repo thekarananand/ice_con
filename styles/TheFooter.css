@@ -96,7 +96,7 @@ footer .buffer-b p { width: fit-content; }
 
 
 
-@media (width > 600px) {
+@media (width > 800px) {
     footer .buffer-a {
         display: grid;
         grid-template-columns: auto calc(35ch + var(--side-padding));
