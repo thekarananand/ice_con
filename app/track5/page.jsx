@@ -6,8 +6,8 @@ const PageContent = () => {
     return (
         <main className={dm_sans.className}>
             <TheHeroSection
-                smallText=''
-                largeText="Our Industry Partner"
+                smallText='SPECIAL TRACK'
+                largeText="Renewable Energy"
             />
             <div className="S1 SkewSection">
                 <section className="content-container">

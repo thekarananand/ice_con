@@ -200,6 +200,7 @@ const PageContent = () => {
                                 <div className="text">
                                     <span className="smallText">Track 1 </span>
                                     <span className="largeText">Advances in Electrical Systems</span>
+                                    <a href="/track1">Learn More</a>
                                 </div>
                             </li>
                             <li>
@@ -207,6 +208,7 @@ const PageContent = () => {
                                 <div className="text">
                                     <span className="smallText">Track 2 </span>
                                     <span className="largeText">Smart Electronics and Communications</span>
+                                    <a href="/track2">Learn More</a>
                                 </div>
                             </li>
                             <li>
@@ -214,6 +216,7 @@ const PageContent = () => {
                                 <div className="text">
                                     <span className="smallText">Track 3 </span>
                                     <span className="largeText">Instrumentation and Automation</span>
+                                    <a href="/track3">Learn More</a>
                                 </div>
                             </li>
                             <li>
@@ -223,6 +226,7 @@ const PageContent = () => {
                                 <div className="text">
                                     <span className="smallText">Track 4 </span>
                                     <span className="largeText">Emerging Technologies</span>
+                                    <a href="/track4">Learn More</a>
                                 </div>
                             </li>
                             {/* <div className="dummy"></div> */}
@@ -231,6 +235,7 @@ const PageContent = () => {
                                 <div className="text">
                                     <span className="smallText">Special Track </span>
                                     <span className="largeText">Renewable Energy</span>
+                                    <a href="/track5">Learn More</a>
                                 </div>
                             </li>
                         </ul>
