@@ -1,5 +1,6 @@
 // Next Font Custom Components
 import dm_sans from '@/components/TheFont'
+import Link from 'next/link'
 
 const NonFound = () => {
 
@@ -17,7 +18,7 @@ const NonFound = () => {
                         webpage you are looking for.
                     </h1>
                     
-                    <p>Let's take you back to <a href="../">Homepage</a></p>
+                    <p>Let's take you back to <Link href="/">Homepage</Link></p>
                 </div>
             </section>
         </div>

@@ -3,6 +3,7 @@ import dm_sans from '@/components/TheFont'
 import '@/styles/TheHeroSection.css'
 
 import Image from 'next/image'
+import Link from 'next/link'
 import hero_bg from '../public/Cover.png'
 
 const TheHeroSection = ({ smallText = "", largeText = "", buttonsArray="" }) => {
