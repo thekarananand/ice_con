@@ -5,8 +5,9 @@ import dm_sans from '@/components/TheFont'
 import TheHeroSection from '@/components/TheHeroSection'
 import TheSectionEndLink from '@/components/TheSectionEndLink'
 
-// Next Image Lib
+// Next Lib
 import Image from 'next/image'
+import Link from 'next/link'
 
 // SVG Components
 import addtocalender from "@/public/addtocalender.svg"
@@ -43,8 +44,8 @@ const PageContent = () => {
                 largeText="International Conference on Electrical, Electronics and Automation (E2A)"
                 buttonsArray={
                     <div className="ButtonsArray flex gap-20px">
-                        <a href='#callForPapers'>Register</a>
-                        <a href=''>Download Flyer</a>
+                        <Link href='#callForPapers'>Register</Link>
+                        <Link href=''>Download Flyer</Link>
                     </div>
                 } />
 
@@ -118,68 +119,68 @@ const PageContent = () => {
                                     <li>
                                         <span className="Date">June 15<sup>th</sup>, 2024 </span>
                                         <span className="Title">Paper Submission Begins</span>
-                                        <a target='_blank' href="">
+                                        <Link href="" target='_blank'>
                                             <Image
                                                 src={addtocalender}
                                                 // width={ 170 }
                                                 height={32}
                                                 alt="Add to Google Calendar" />
-                                        </a>
+                                        </Link>
                                     </li>
                                     <li>
                                         <span className="Date">August 16<sup>th</sup>, 2024 </span>
                                         <span className="Title">Paper Submission Ends</span>
-                                        <a target='_blank' href="">
+                                        <Link href="" target='_blank'>
                                             <Image
                                                 src={addtocalender}
                                                 // width={ 170 }
                                                 height={32}
                                                 alt="Add to Google Calendar" />
-                                        </a>
+                                        </Link>
                                     </li>
                                     <li>
                                         <span className="Date">November 10<sup>th</sup>, 2024 </span>
                                         <span className="Title">Review Process Ends</span>
-                                        <a target='_blank' href="">
+                                        <Link href="" target='_blank'>
                                             <Image
                                                 src={addtocalender}
                                                 // width={ 170 }
                                                 height={32}
                                                 alt="Add to Google Calendar" />
-                                        </a>
+                                        </Link>
                                     </li>
                                     <li>
                                         <span className="Date">November 25<sup>th</sup>, 2024 </span>
                                         <span className="Title">Camera Ready Paper</span>
-                                        <a target='_blank' href="">
+                                        <Link href="" target='_blank'>
                                             <Image
                                                 src={addtocalender}
                                                 // width={ 170 }
                                                 height={32}
                                                 alt="Add to Google Calendar" />
-                                        </a>
+                                        </Link>
                                     </li>
                                     <li>
                                         <span className="Date">December 27<sup>th</sup>, 2024 </span>
                                         <span className="Title">Conference Begins</span>
-                                        <a target='_blank' href="">
+                                        <Link href="" target='_blank'>
                                             <Image
                                                 src={addtocalender}
                                                 // width={ 170 }
                                                 height={32}
                                                 alt="Add to Google Calendar" />
-                                        </a>
+                                        </Link>
                                     </li>
                                     <li>
                                         <span className="Date">December 28<sup>th</sup>, 2024 </span>
                                         <span className="Title">Conference Ends</span>
-                                        <a target='_blank' href="">
+                                        <Link href="" target='_blank'>
                                             <Image
                                                 src={addtocalender}
                                                 // width={ 170 }
                                                 height={32}
                                                 alt="Add to Calender" />
-                                        </a>
+                                        </Link>
                                     </li>
                                 </ul>
                             </div>
@@ -200,7 +201,7 @@ const PageContent = () => {
                                 <div className="text">
                                     <span className="smallText">Track 1 </span>
                                     <span className="largeText">Advances in Electrical Systems</span>
-                                    <a href="/track1">Learn More</a>
+                                    <Link href="/track1">Learn More</Link>
                                 </div>
                             </li>
                             <li>
@@ -208,7 +209,7 @@ const PageContent = () => {
                                 <div className="text">
                                     <span className="smallText">Track 2 </span>
                                     <span className="largeText">Smart Electronics and Communications</span>
-                                    <a href="/track2">Learn More</a>
+                                    <Link href="/track2">Learn More</Link>
                                 </div>
                             </li>
                             <li>
@@ -216,7 +217,7 @@ const PageContent = () => {
                                 <div className="text">
                                     <span className="smallText">Track 3 </span>
                                     <span className="largeText">Instrumentation and Automation</span>
-                                    <a href="/track3">Learn More</a>
+                                    <Link href="/track3">Learn More</Link>
                                 </div>
                             </li>
                             <li>
@@ -226,7 +227,7 @@ const PageContent = () => {
                                 <div className="text">
                                     <span className="smallText">Track 4 </span>
                                     <span className="largeText">Emerging Technologies</span>
-                                    <a href="/track4">Learn More</a>
+                                    <Link href="/track4">Learn More</Link>
                                 </div>
                             </li>
                             {/* <div className="dummy"></div> */}
@@ -235,7 +236,7 @@ const PageContent = () => {
                                 <div className="text">
                                     <span className="smallText">Special Track </span>
                                     <span className="largeText">Renewable Energy</span>
-                                    <a href="/track5">Learn More</a>
+                                    <Link href="/track5">Learn More</Link>
                                 </div>
                             </li>
                         </ul>

@@ -4,6 +4,7 @@ import '@/styles/TheFooter.css'
 import '@/styles/sections.css'
 
 import Image from 'next/image'
+import Link from 'next/link'
 
 import pin_drop from "@/public/pin_drop.svg"
 import badge from "@/public/badge.svg"
@@ -14,13 +15,13 @@ const TheFooter = () => {
             <div className="content">
                 <div className="buffer-a">
                     <section className="buffer-a1">
-                        <a href="" className='brand'>
+                        <Link href="/" className='brand'>
                             <h2>E2A Conference</h2>
                             <p>International Conference on Electrical, Electronics and Automation.</p>
-                        </a>
+                        </Link>
                         <article>
                             Organized by <br />
-                            <a href=''>Dr B R Ambedkar <br />National Institute of Technology, Jalandhar.</a>
+                            <Link href='https://www.nitj.ac.in' target='_blank'>Dr B R Ambedkar <br />National Institute of Technology, Jalandhar.</Link>
                         </article>
                     </section>
                     <section className="buffer-a2">
@@ -44,8 +45,8 @@ const TheFooter = () => {
                                     <div>
                                         <span className="name">Dr Afzal Sikander</span>
                                         <span className="flex jcsb">
-                                            <a href="mailto:afzals@nitj.ac.in">afzals@nitj.ac.in</a><br />
-                                            <a href="tel:+917078438786">+91 70784 38786</a>
+                                            <Link href="mailto:afzals@nitj.ac.in">afzals@nitj.ac.in</Link><br />
+                                            <Link href="tel:+917078438786">+91 70784 38786</Link>
                                         </span>
 
                                     </div>
@@ -55,8 +56,8 @@ const TheFooter = () => {
                                     <div>
                                         <span className="name">Dr Mamta Khosla</span>
                                         <span className="flex jcsb">
-                                            <a href="mailto:khoslam@nitj.ac.in">khoslam@nitj.ac.in</a><br />
-                                            <a href="tel:+919888604632">+91 98886 04632</a>
+                                            <Link href="mailto:khoslam@nitj.ac.in">khoslam@nitj.ac.in</Link><br />
+                                            <Link href="tel:+919888604632">+91 98886 04632</Link>
                                         </span>
 
                                     </div>
@@ -67,7 +68,7 @@ const TheFooter = () => {
                     </section>
                 </div>
                 <section className="buffer-b">
-                    <p>Designed & Developed by <a href="">Student Coordinators Team</a></p>
+                    <p>Designed & Developed by <Link href="">Student Coordinators Team</Link></p>
                 </section>
             </div>
         </footer>
