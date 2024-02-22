@@ -47,6 +47,8 @@ a {
 
 .flex {display: flex;}
 
+.grid {display: grid;}
+
 .flex-v {display: flex; flex-direction: column;}
 
 .jcc {justify-content: center;}
@@ -100,3 +102,17 @@ a {
 .w-100p{width: 100%;}
 
 .h-100p{height: 100%;}
+
+.gap_SkewSafeGap { gap: var(--SkewSafeGap)}
+
+.sr-only {
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    padding: 0;
+    margin: -1px;
+    overflow: hidden;
+    clip: rect(0, 0, 0, 0);
+    white-space: nowrap;
+    border-width: 0;
+}

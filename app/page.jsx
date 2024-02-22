@@ -4,13 +4,13 @@ import dm_sans from '@/components/TheFont'
 // Custom Components
 import TheHeroSection from '@/components/TheHeroSection'
 import TheSectionEndLink from '@/components/TheSectionEndLink'
+import TheTimeline from '@/components/TheTimeline'
 
 // Next Lib
 import Image from 'next/image'
 import Link from 'next/link'
 
 // SVG Components
-import addtocalender from "@/public/addtocalender.svg"
 import ticket from "@/public/ticket.svg"
 
 // Sponsors Components
@@ -46,12 +46,15 @@ const PageContent = () => {
                     <div className="ButtonsArray flex gap-20px">
                         <Link href='#callForPapers'>Register</Link>
                         <Link href=''>Download Flyer</Link>
+                        <Link href='#about'>Learn More</Link>
                     </div>
-                } />
+                }
+
+                bigHero='true' />
 
             <div className='S1 SkewSection flex-v SkewSafeGap'>
                 <div className="buffer">
-                    <div className="buffer-1">
+                    <div className="buffer-1 flex-v gap_SkewSafeGap">
                         <section id="about" className="content-container">
                             <div className="content">
                                 <h2>
@@ -60,6 +63,21 @@ const PageContent = () => {
                                 <p>
                                    The International Conference on Electrical, Electronics, and Automation (E2A) serves as a global hub where experts gather to explore, collaborate, and share groundbreaking research and innovations in the rapidly evolving fields of electrical engineering, electronics, and automation. E2A provides a vital platform for diverse professionals to exchange ideas and knowledge, fostering innovation and shaping a future powered by cutting-edge technologies. Join us at E2A to be part of this transformative journey towards a  smarter, more connected, and automated world, where your contributions are essential in shaping the future. Selected papers will be published in SCOPUS indexed proceedings
                                 </p>
+                            </div>
+                        </section>
+                        <section id="DocLinks" className="content-container">
+                            <div className="content">
+                                <h2>
+                                    Some Important Links
+                                </h2>
+                                <ul className='grid'>
+                                    <li className='flex-v'>
+                                        <span>Code of Ethics</span><Link href='/'>View Here</Link>
+                                    </li>
+                                    <li className='flex-v'>
+                                        <span>Author Instructions</span><Link href='/'>View Here</Link>
+                                    </li>
+                                </ul>
                             </div>
                         </section>
                         <section id="sponsors" className="content-container">
@@ -110,81 +128,7 @@ const PageContent = () => {
                         </section>
                     </div>
                     <div className="buffer-2">
-                        <section id="timeline" className="content-container">
-                            <div className="content">
-                                <h2>
-                                    Timeline
-                                </h2>
-                                <ul className='flex-v gap-10px'>
-                                    <li>
-                                        <span className="Date">June 15<sup>th</sup>, 2024 </span>
-                                        <span className="Title">Paper Submission Begins</span>
-                                        <Link href="" target='_blank'>
-                                            <Image
-                                                src={addtocalender}
-                                                // width={ 170 }
-                                                height={32}
-                                                alt="Add to Google Calendar" />
-                                        </Link>
-                                    </li>
-                                    <li>
-                                        <span className="Date">August 16<sup>th</sup>, 2024 </span>
-                                        <span className="Title">Paper Submission Ends</span>
-                                        <Link href="" target='_blank'>
-                                            <Image
-                                                src={addtocalender}
-                                                // width={ 170 }
-                                                height={32}
-                                                alt="Add to Google Calendar" />
-                                        </Link>
-                                    </li>
-                                    <li>
-                                        <span className="Date">November 10<sup>th</sup>, 2024 </span>
-                                        <span className="Title">Review Process Ends</span>
-                                        <Link href="" target='_blank'>
-                                            <Image
-                                                src={addtocalender}
-                                                // width={ 170 }
-                                                height={32}
-                                                alt="Add to Google Calendar" />
-                                        </Link>
-                                    </li>
-                                    <li>
-                                        <span className="Date">November 25<sup>th</sup>, 2024 </span>
-                                        <span className="Title">Camera Ready Paper</span>
-                                        <Link href="" target='_blank'>
-                                            <Image
-                                                src={addtocalender}
-                                                // width={ 170 }
-                                                height={32}
-                                                alt="Add to Google Calendar" />
-                                        </Link>
-                                    </li>
-                                    <li>
-                                        <span className="Date">December 27<sup>th</sup>, 2024 </span>
-                                        <span className="Title">Conference Begins</span>
-                                        <Link href="" target='_blank'>
-                                            <Image
-                                                src={addtocalender}
-                                                // width={ 170 }
-                                                height={32}
-                                                alt="Add to Google Calendar" />
-                                        </Link>
-                                    </li>
-                                    <li>
-                                        <span className="Date">December 28<sup>th</sup>, 2024 </span>
-                                        <span className="Title">Conference Ends</span>
-                                        <Link href="" target='_blank'>
-                                            <Image
-                                                src={addtocalender}
-                                                // width={ 170 }
-                                                height={32}
-                                                alt="Add to Calender" />
-                                        </Link>
-                                    </li>
-                                </ul>
-                            </div>
-                        </section>
+                        <TheTimeline />
                     </div>
                 </div>
             </div>
@@ -230,7 +174,6 @@ const PageContent = () => {
                                     <Link href="/track4">Learn More</Link>
                                 </div>
                             </li>
-                            {/* <div className="dummy"></div> */}
                             <li>
                                 <div className="art"></div>
                                 <div className="text">

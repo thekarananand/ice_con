@@ -68,7 +68,7 @@ const TheFooter = () => {
                     </section>
                 </div>
                 <section className="buffer-b">
-                    <p>Designed & Developed by <Link href="">Student Coordinators Team</Link></p>
+                    <p>Designed & Developed by <Link href="/student-coordinators">Student Coordinators Team</Link></p>
                 </section>
             </div>
         </footer>

@@ -7,7 +7,7 @@ const NonFound = () => {
     const speakerPicSize = "30vw"
 
     return (
-        <main className={dm_sans.className + " S2"}>
+        <main className={dm_sans.className + " S2 bigHero"}>
 
         <div className="SkewSection">
             <section className="content-container">

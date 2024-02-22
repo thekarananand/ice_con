@@ -6,9 +6,16 @@ import Image from 'next/image'
 import Link from 'next/link'
 import hero_bg from '../public/Cover.png'
 
-const TheHeroSection = ({ smallText = "", largeText = "", buttonsArray="" }) => {
+const TheHeroSection = ({ smallText = "", largeText = "", buttonsArray="", bigHero='false'}) => {
+
+    let bigHeroClass = '';
+
+    if (bigHero == 'true') {
+        bigHeroClass = 'bigHero'
+    }
+
     return (
-        <section className={ dm_sans.className + " HeroSection content-container"}>
+        <section className={ dm_sans.className + " HeroSection content-container " + bigHeroClass}>
 
             <div className="text content">
                 <span className='smallText'>{ smallText }</span>

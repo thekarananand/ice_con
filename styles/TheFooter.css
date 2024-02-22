@@ -1,4 +1,4 @@
- footer {
+footer {
     --link-blue: #00D4FF;
     --border-line: 1px solid hsla(0, 0%, 100%, 0.4);
 
@@ -99,11 +99,12 @@ footer .buffer-b p { width: fit-content; }
 @media (width > 800px) {
     footer .buffer-a {
         display: grid;
-        grid-template-columns: auto calc(35ch + var(--side-padding));
+        /* grid-template-columns: auto calc(35ch + var(--side-padding)); */
+        grid-template-columns: 1fr 1fr
     }
     footer .buffer-a .buffer-a2 {
         padding-left: var(--side-padding);
-        border-left: var(--border-line);
+        /* border-left: var(--border-line); */
     }
 
 }

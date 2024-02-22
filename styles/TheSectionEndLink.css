@@ -9,5 +9,5 @@
     border: 1px solid rgba(0, 0, 0, 0.2);
     border-radius: calc( .5 * (1.1rem + 1rem + 1rem) );
     background-color: hsla(var(--hsl-accent-1), 0.3);
-    box-shadow: 3px 3px 10px rgba(50, 50, 93, 0.25);
+    box-shadow: 3px 3px 3px rgba(50, 50, 93, 0.25);
 }

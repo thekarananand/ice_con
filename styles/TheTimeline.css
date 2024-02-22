@@ -1,0 +1,95 @@
+
+#timeline {
+    margin-bottom: var(--SkewSafeGap);
+}
+
+#timeline ul {
+    border-left: 1px solid hsl(var(--hsl-accent-1));
+    margin-left: calc(.5 * var(--line-spacing));
+    padding-left: var(--line-spacing);
+    padding-block: 10px;
+}
+
+#timeline li {
+    box-sizing: border-box;
+    padding: .75ch .75rem;
+    border: 1px solid hsl(var(--hsl-bg-color-2));
+    border-radius: 0.5rem;
+    position: relative;    color: #368ab5;
+    color: #2f7ca2;
+    box-shadow: 3px 3px 10px rgba(50, 50, 93, 0.25);
+    background-color: hsl(var(--hsl-bg-color-1));
+}
+
+#timeline li::before {
+    content: '';
+    position: absolute;
+    height: .75rem;
+    width: .75rem;
+    background-color: hsl(var(--hsl-accent-1));
+    top: 50%;
+    left: calc((-1 * var(--line-spacing)) - 1px);
+    transform: translate(-50%, -50%);
+    border-radius: 50%;
+    border: .5rem solid hsl(var(--hsl-accent-2));
+    z-index: -1;
+}
+
+#timeline li .Date,
+#timeline li .Date sup {
+    font-weight: var(--fw-bold);
+    font-size: 0.9rem;
+    color: hsl(var(--hsl-accent-1));
+}
+
+#timeline li .Title {
+    margin-top: .1rem;
+    font-weight: var(--fw-normal);
+    font-size: 1.1rem;
+}
+
+#timeline li a {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: absolute;
+    top: 50%;
+    right: 0%;
+    background-color: hsla(var(--hsl-accent-1), 0.2);
+    border-radius: 50%;
+    aspect-ratio: 1;
+    height: calc(100% - 1.5ch);
+    transform: translateY(-50%) translateX(-.5rem);
+}
+
+#timeline li:hover a::before {
+    content: 'Add to Google Calender';
+    position: absolute;
+    top: -2.2rem;
+    right: 0;
+    height: 1.3rem;
+    width: 16.8ch;
+    padding: 0.5ch 0.5rem;
+    background-color: hsl(var(--hsl-accent-1));
+    border-radius: .5ch;
+    box-shadow: 5px 5px 7px rgba(0, 0, 0, 0.3);
+    color: white;
+    font-weight: var(--fw-bold);
+    outline: none;
+    outline-color: transparent;
+}
+
+#timeline li:hover a::after {
+    content: '';
+    position: absolute;
+    z-index: 1;
+    top: -2.2rem;
+    transform: translate(50%, calc(50% - 2px));
+    right: 50%;
+    height: 2em;
+    width: 2rem;
+    background-color: hsl(var(--hsl-accent-1));
+    clip-path: polygon(100% 40%, 0% 40%, 50% 80%);
+    outline: none;
+    outline-color: transparent;
+}

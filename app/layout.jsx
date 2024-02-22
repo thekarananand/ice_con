@@ -7,7 +7,6 @@ import TheFooter from '@/components/TheFooter'
 
 import '@/styles/commonClasses.css'
 import '@/styles/sections.css'
-
 import '@/styles/global.css'
 
 import favicon from '@/public/favicon.ico'

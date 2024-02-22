@@ -1,5 +1,3 @@
-@import url('https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,200;0,9..40,400;0,9..40,600;0,9..40,900;1,9..40,200;1,9..40,400;1,9..40,600;1,9..40,900&display=swap');
-
 header {
 
 
@@ -12,9 +10,13 @@ header {
 
     box-shadow: 0px 0px 5px 0px hsla(0, 0%, 25%, 0.808);
     border-bottom: 1px solid hsl(0, 0%, 50%);
+
+    box-sizing: border-box;
 }
+
 nav {
     height: var(--header-height);
+    box-sizing: border-box;
 }
 
 nav .left img {
@@ -31,4 +33,111 @@ nav .left span {
 nav .left h2 {
     font-size: 1.2em;
     font-weight: var(--fw-normal);
+}
+
+#Expandable-Nav { height: 100%; }
+
+#Expandable-Nav ul{
+    height: 100%;
+    gap: 0.3ch;
+}
+
+#Expandable-Nav ul li a {
+    display: block;
+    /* border: 1px solid rgb(152, 152, 152); */
+    padding: 0.65ch 0.65rem;
+    border-radius: 0.5ch;
+    text-decoration: none;
+    background-color: hsla(0, 0%, 100%, 0);
+}
+
+#Expandable-Nav ul li a:hover {
+    animation: nav-btn 500ms both ease-out;
+}
+
+@keyframes nav-btn {
+    from { background-color: hsla(0, 0%, 100%, 0); }
+    to { background-color: hsla(203, 100%, 80%, 0.35);}
+}
+
+#Expandable-Nav > ul{
+    align-items: center;
+}
+
+.mobile-nav-toggle,
+#Expandable-Nav .dark {
+    display: none;
+}
+
+@media (width < 1000px) {
+
+    #Expandable-Nav > ul{
+        position: absolute;
+        flex-direction: column;
+        align-items: start;
+        top: 0;
+        left: 0;
+        background-color: white;
+        height: 100vh;
+        width: min(100vh, 25ch);
+        box-sizing: border-box;
+        padding: 1em;
+        padding-top:calc( var(--header-height) + 1em );
+        box-shadow: 0 0 5em rgba(0, 0, 0, 0.3);
+        transform: translateX(-100%);
+    }
+
+    #Expandable-Nav[data-visible='true'] ul {
+        transform: translateX(0);
+    }
+
+    #Expandable-Nav > ul li {
+        width: 100%
+    }
+
+
+    #Expandable-Nav[data-visible='true'] > .dark{
+        display: block;
+        height: 100vh;
+        width: 100vw;
+        background-color: hsla(0, 0%, 10%, 0.4);
+        position: absolute;
+        left: 0;
+        top: 0;
+        z-index: -1;
+        backdrop-filter: blur(5px);
+    }
+
+    #Expandable-Nav > ul li a {
+        font-size: 1.2em;
+        padding: 1em;
+    }
+
+    .mobile-nav-toggle {
+        --nav-height: 64px;
+        --nav-gap: 5px;
+
+        display: block;
+        background-image: url("../public/menu.svg");
+        background-repeat: no-repeat;
+        background-size: 75%;
+        background-position: 50%;
+        height: calc(var(--nav-height) - 2 * var(--nav-gap)) ;
+        width: calc(var(--nav-height) - 2 * var(--nav-gap)) ;
+        border: none;
+        position: absolute;
+        top: calc( 64px / 2 );
+        right: calc( 64px / 2 );
+        transform: translate( 50%, -50% );
+        z-index: 100;
+        cursor: pointer;
+        border-radius: 50%;
+        background-color: white;
+    }
+
+    nav:has(#Expandable-Nav[data-visible='true']) .mobile-nav-toggle {
+        background-image: url("../public/close.svg");
+        background-color: hsl(0, 84%, 83%);
+        border: 1px solid black;
+    }
 }
