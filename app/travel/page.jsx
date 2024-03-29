@@ -10,7 +10,7 @@ import TheHeroSection from '@/components/TheHeroSection';
 
 const PageContent = () => {
 
-    const name = "wonderland , jalandhar"
+    const name = "wonderland , Jalandhar"
 
     const [widths, setWidths] = useState([2, 35, 2 ,2]);
 
