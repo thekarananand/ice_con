@@ -40,13 +40,15 @@ const trav=({wid = "" , onmouseover , locationName})=>{
                     <div>
                         <p>Place Name</p>
                         <p>description</p>
-                        <div id='icon'>
-                            <a href= {`https://www.google.com/maps?q=${encodeURIComponent(locationName)}`} target="_blank">
-                            <FontAwesomeIcon icon={faDiamondTurnRight} />
-                            </a>
-                        </div>
-                        
                     </div>
+                        
+                    <div id='icon'>
+                        <a href= {`https://www.google.com/maps?q=${encodeURIComponent(locationName)}`} target="_blank">
+                        <FontAwesomeIcon icon={faDiamondTurnRight} id="logo"  />
+                        </a>
+                    </div>
+                        
+                    
 
                     
                     
