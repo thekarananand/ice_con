@@ -6,7 +6,7 @@
 
 #travel_sec:hover{
     width: 30%;
-    transition-duration: 2s;
+    transition-duration: 1.2s;
 }
 
 #travel_sec:hover #text{
