@@ -41,8 +41,8 @@ const NavUl = () => {
                         onClick={ CloseNav }>Call for Papers</Link>
                     </li>
                     <li aria-hidden='true'>
-                        <Link href="/programs"
-                        onClick={ CloseNav }>Programs</Link>
+                        <Link href="/events"
+                        onClick={ CloseNav }>Events</Link>
                     </li>
                     <li aria-hidden='true'>
                         <Link href="/news"

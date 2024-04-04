@@ -9,7 +9,7 @@ const PageContent = () => {
         <main className={dm_sans.className}>
             <TheHeroSection
                 smallText='TIMELINE'
-                largeText="Programs at a Glance"
+                largeText="Events at a Glance"
             />
             <div className="S1 SkewSection">
                 <section className="content-container">

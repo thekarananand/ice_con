@@ -1,0 +1,47 @@
+ul:has( > .theCard){
+    display: grid;
+    gap: 10px;
+}
+
+.theCard {
+    box-sizing: border-box;
+    display: grid;
+    grid-template-columns: 7rem auto;
+    background: white;
+    border: 3px solid white;
+    border-radius: 6px;
+    box-shadow: 3px 3px 15px rgba(50, 50, 93, 0.25);
+    overflow: hidden;
+}
+
+.theCard .text {
+    padding: .5ch .5rem;
+    box-sizing: border-box;
+    display: flex;
+    flex-direction: column;
+    gap: .2rem;
+}
+
+.theCard .text > * {
+    height: fit-content;
+}
+
+.theCard .text .largeText {
+    font-weight: var(--fw-normal);
+    font-size: 1.1rem;
+}
+
+.theCard .text .smallText {
+    font-weight: var(--fw-bold);
+    font-size: 0.9rem;
+    color: hsl(var(--hsl-accent-1));
+}
+
+.theCard > img,
+.theCard > .art {
+    width: 7rem;
+    height: 7rem;
+    border-radius: 4px;
+    object-fit: cover;
+    background-color: hsl(var(--hsl-bg-color-3));
+}

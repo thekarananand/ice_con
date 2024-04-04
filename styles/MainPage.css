@@ -115,105 +115,8 @@ main{
 }
 
 
-#keynotes ul,
-#callForPapers ul {
-    display: grid;
-    gap: 10px;
-}
 
-#keynotes li,
-#callForPapers li {
-    box-sizing: border-box;
-    display: grid;
-    grid-template-columns: 7rem auto;
-    background: white;
-    border: 3px solid white;
-    border-radius: 6px;
-    box-shadow: 3px 3px 15px rgba(50, 50, 93, 0.25);
-    overflow: hidden;
-}
 
-#keynotes li .text,
-#callForPapers li .text {
-    margin: 1px;
-    padding: .5ch .5rem;
-    box-sizing: border-box;
-    display: flex;
-    flex-direction: column;
-    gap: .2rem;
-
-}
-
-#keynotes li .text>*,
-#callForPapers li .text>* {
-    height: fit-content;
-}
-
-#keynotes li .text .largeText,
-#callForPapeDownload Flyerrs li .text .largeText {
-    font-weight: var(--fw-normal);
-    font-size: 1.1rem;
-}
-
-#keynotes li .text .smallText,
-#callForPapers li .text .smallText {
-    font-weight: var(--fw-bold);
-    font-size: 0.9rem;
-    color: hsl(var(--hsl-accent-1));
-}
-
-#keynotes li .text .smallText {
-    height: 2.2rem
-}
-
-#keynotes li img,
-#callForPapers li .art {
-    width: 7rem;
-    height: 7rem;
-    border-radius: 4px;
-    object-fit: cover;
-    background-color: hsl(var(--hsl-bg-color-3));
-
-}
-
-#callForPapers li .art{
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    position: relative;
-}
-
-#callForPapers li .art img{
-    z-index: +1;
-    position: relative;
-    max-height: 75%;
-}
-
-#callForPapers li:nth-child(4) .art::before{
-    content: "";
-    background-image:
-    radial-gradient(at 50% 30%, hsla(189, 100%, 43%, 0.6) 0px, transparent 90%),
-    radial-gradient(at 40% 70%, hsla(261, 100%, 50%, 0.6) 0px, transparent 70%);
-    position: absolute;
-    inset: 0;
-    border-radius: 4px;
-    z-index: 0;
-}
-
-#callForPapers li:nth-child(4) .art::before{
-    opacity: 0;
-    transition: 300ms ease-in;
-}
-
-@media (pointer:coarse) {
-    #callForPapers li:nth-child(4) .art::before{
-        opacity: 1;
-    }
-}
-
-#callForPapers li:nth-child(4):hover .art::before{
-    opacity: 1;
-}
 
 @media (width > 620px) {
     #sponsors ul {
@@ -255,11 +158,18 @@ main{
 
 @media (width > 800px) {
 
-    #callForPapers ul {
-
+    #callForPapers ul,
+    #keynotes ul {
         --gap: 15px;
         gap: var(--gap);
+    }
+
+    #callForPapers ul {
         grid-template-columns: calc( (100% - var(--gap) ) / 2) calc( (100% - var(--gap) ) / 2);
+    }
+
+    #keynotes ul{
+        grid-template-columns:  repeat(2 , calc( (100% - (2 - 1) * var(--gap) ) / 2));
     }
 
     #callForPapers ul li:first-of-type {
@@ -268,7 +178,7 @@ main{
 
     #callForPapers ul li:nth-of-type(even) {
         position: relative;
-        top: -4.8rem;
+        top: -50%;
     }
 
     #callForPapers ul li {
@@ -283,11 +193,7 @@ main{
     #callForPapers ul li .text {
         padding: 1ch 1rem;
     }
-    #keynotes ul{
-        --gap: 15px;
-        gap: var(--gap);
-        grid-template-columns:  repeat(2 , calc( (100% - (2 - 1) * var(--gap) ) / 2));
-    }
+
 
     #keynotes ul li {
         grid-template-columns: auto;
@@ -329,43 +235,6 @@ main{
         height: 4.8rem;
         /* aspect-ratio: 1 !important; */
     }
-}
-
-.e404 {
-    min-height: 65vh;
-}
-
-.e404 h3 {
-    font-size: 1.4rem;
-    font-weight: var(--fw-bold);
-}
-
-.e404 h1 {
-    width: min(100%, 19ch);
-    font-size: 2.5rem;
-    font-weight: var(--fw-thin);
-}
-
-.e404 p {
-    margin-top: 1rem;
-    font-size: 1.2rem;
-}
-
-.e404 a {
-    color: hsl(190, 69%, 37%);
-    font-weight: var(--fw-bold);
-}
-
-@media (width > 650px) {
-    .e404 h3 { font-size: 1.8rem; }
-    .e404 h1 { font-size: 3rem;   }
-    .e404 p  { font-size: 1.2rem; }
-}
-
-@media (width > 850px) {
-    .e404 h3 { font-size: 2rem;   }
-    .e404 h1 { font-size: 4rem;   }
-    .e404 p  { font-size: 1.2rem; }
 }
 
 #DocLinks .grid {

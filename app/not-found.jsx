@@ -2,6 +2,9 @@
 import dm_sans from '@/components/TheFont'
 import Link from 'next/link'
 
+import '@/styles/page404.css'
+
+
 const NonFound = () => {
 
     const speakerPicSize = "30vw"

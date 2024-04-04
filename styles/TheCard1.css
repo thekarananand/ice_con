@@ -1,0 +1,40 @@
+.theCard1 .art{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+}
+
+.theCard1 .art img{
+    z-index: +1;
+    position: relative;
+    max-height: 75%;
+}
+
+/* Hover Gradient */
+
+.theCard1:nth-child(4) .art::before{
+    content: "";
+    background-image:
+    radial-gradient(at 50% 30%, hsla(189, 100%, 43%, 0.6) 0px, transparent 90%),
+    radial-gradient(at 40% 70%, hsla(261, 100%, 50%, 0.6) 0px, transparent 70%);
+    position: absolute;
+    inset: 0;
+    border-radius: 4px;
+    z-index: 0;
+}
+
+.theCard1:nth-child(4) .art::before{
+    opacity: 0;
+    transition: 300ms ease-in;
+}
+
+.theCard1:nth-child(4):hover .art::before{
+    opacity: 1;
+}
+
+@media (pointer:coarse) {
+    .theCard:nth-child(4) .art::before{
+        opacity: 1;
+    }
+}

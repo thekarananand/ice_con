@@ -5,6 +5,8 @@ import dm_sans from '@/components/TheFont'
 import TheHeroSection from '@/components/TheHeroSection'
 import TheSectionEndLink from '@/components/TheSectionEndLink'
 import TheTimeline from '@/components/TheTimeline'
+import TheCard1 from '@/components/TheCard1'
+import TheCard2 from '@/components/TheCard2'
 
 // Next Lib
 import Image from 'next/image'
@@ -31,10 +33,12 @@ import Mr_Subrahmanyam_Pulipaka from '@/public/speaker/Mr_Subrahmanyam_Pulipaka.
 // Speakers
 import t4 from '@/public/trackIcons/t4.svg'
 
+// Styling
+import '@/styles/MainPage.css'
+
+
 
 const PageContent = () => {
-
-    const speakerPicSize = "30vw"
 
     return (
         <main className={dm_sans.className}>
@@ -61,19 +65,19 @@ const PageContent = () => {
                                     About E2A Conference
                                 </h2>
                                 <p>
-                                   The International Conference on Electrical, Electronics, and Automation (E2A) serves as a global hub where experts gather to explore, collaborate, and share groundbreaking research and innovations in the rapidly evolving fields of electrical engineering, electronics, and automation. E2A provides a vital platform for diverse professionals to exchange ideas and knowledge, fostering innovation and shaping a future powered by cutting-edge technologies. Join us at E2A to be part of this transformative journey towards a  smarter, more connected, and automated world, where your contributions are essential in shaping the future. Selected papers will be published in SCOPUS indexed proceedings
+                                    The International Conference on Electrical, Electronics, and Automation (E2A) serves as a global hub where experts gather to explore, collaborate, and share groundbreaking research and innovations in the rapidly evolving fields of electrical engineering, electronics, and automation. E2A provides a vital platform for diverse professionals to exchange ideas and knowledge, fostering innovation and shaping a future powered by cutting-edge technologies. Join us at E2A to be part of this transformative journey towards a  smarter, more connected, and automated world, where your contributions are essential in shaping the future. Selected papers will be published in SCOPUS indexed proceedings
                                 </p>
                             </div>
                         </section>
                         <section id="DocLinks" className="content-container">
                             <div className="content">
                                 <h2>
-                                    Some Important Links
+                                    Code of Ethics
                                 </h2>
                                 <ul className='grid'>
-                                    <li className='flex-v'>
+                                    {/* <li className='flex-v'>
                                         <span>Code of Ethics</span><Link href='/'>View Here</Link>
-                                    </li>
+                                    </li> */}
                                     <li className='flex-v'>
                                         <span>Author Instructions</span><Link href='/'>View Here</Link>
                                     </li>
@@ -123,7 +127,7 @@ const PageContent = () => {
                                         alt="Siemens" />
                                     </li>
                                 </ul>
-                                <TheSectionEndLink link="/sponsors" text="and Many More..."/>
+                                <TheSectionEndLink link="/sponsors" text="and Many More..." />
                             </div>
                         </section>
                     </div>
@@ -140,50 +144,27 @@ const PageContent = () => {
                         </h2>
 
                         <ul>
-                            <li>
-                                <div className="art"></div>
-                                <div className="text">
-                                    <span className="smallText">Track 1 </span>
-                                    <span className="largeText">Advances in Electrical Systems</span>
-                                    <Link href="/track1">Learn More</Link>
-                                </div>
-                            </li>
-                            <li>
-                                <div className="art"></div>
-                                <div className="text">
-                                    <span className="smallText">Track 2 </span>
-                                    <span className="largeText">Smart Electronics and Communications</span>
-                                    <Link href="/track2">Learn More</Link>
-                                </div>
-                            </li>
-                            <li>
-                                <div className="art"></div>
-                                <div className="text">
-                                    <span className="smallText">Track 3 </span>
-                                    <span className="largeText">Instrumentation and Automation</span>
-                                    <Link href="/track3">Learn More</Link>
-                                </div>
-                            </li>
-                            <li>
-                                <div className="art">
-                                    <Image src={t4}/>
-                                </div>
-                                <div className="text">
-                                    <span className="smallText">Track 4 </span>
-                                    <span className="largeText">Emerging Technologies</span>
-                                    <Link href="/track4">Learn More</Link>
-                                </div>
-                            </li>
-                            <li>
-                                <div className="art"></div>
-                                <div className="text">
-                                    <span className="smallText">Special Track </span>
-                                    <span className="largeText">Renewable Energy</span>
-                                    <Link href="/track5">Learn More</Link>
-                                </div>
-                            </li>
+                            <TheCard1
+                                smallText='Track 1'
+                                largeText='Advances in Electrical Systems'
+                                link='/track1' />
+                            <TheCard1
+                                smallText='Track 2'
+                                largeText='Smart Electronics and Communications'
+                                link='/track2' />
+                            <TheCard1
+                                smallText='Track 3'
+                                largeText='Instrumentation and Automation'
+                                link='/track3' />
+                            <TheCard1
+                                smallText='Track 4'
+                                largeText='Emerging Technologies'
+                                link='/track4' />
+                            <TheCard1
+                                smallText='Special Track'
+                                largeText='Renewable Energy'
+                                link='/track5' />
                         </ul>
-
                     </div>
                 </section>
                 <section id='keynotes' className="content-container">
@@ -192,47 +173,33 @@ const PageContent = () => {
                             Keynotes from Industry Experts
                         </h2>
                         <ul>
-                            <li>
-                                <Image src={ Prof_Marta_Zurek_Mortka } width={ speakerPicSize } sizes={ speakerPicSize } alt='A Photograph of Prof. Marta Zurek-Mortka'/>
-                                <div className="text">
-                                    <span className="largeText">Prof. Marta Zurek-Mortka </span>
-                                    <span className="smallText">Institute for Sustainable Technologies, Radom, Poland.</span>
-                                </div>
-                            </li>
-                            <li>
-                                <Image src={ Prof_Chris_Mi } width={ speakerPicSize } sizes={ speakerPicSize } alt='A Photograph of Prof. Chris Mi'/>
-                                <div className="text">
-                                    <span className="largeText">Prof. Chris Mi </span>
-                                    <span className="smallText">San Diego State University, USA.</span>
-                                </div>
-                            </li>
-                            <li>
-                                <Image  src={ Prof_Nakai_Hirotaka } width={ speakerPicSize } sizes={ speakerPicSize } alt='A Photograph of Prof. Nakai Hirotaka'/>
-                                <div className="text">
-                                    <span className="largeText">Prof. Nakai Hirotaka </span>
-                                    <span className="smallText">High Energy Accelerator Research Organization (KEK), Japan.</span>
-                                </div>
-                            </li>
-                            <li>
-                                <Image  src={ Dr_Ajay_Mathur } width={ speakerPicSize } sizes={ speakerPicSize } alt='A Photograph of Dr Ajay Mathur'/>
-                                <div className="text">
-                                    <span className="largeText">Dr. Ajay Mathur </span>
-                                    <span className="smallText">Director General, International Solar Alliance.</span>
-                                </div>
-                            </li>
-                            <li>
-                                <Image  src={ Mr_Subrahmanyam_Pulipaka } width={ speakerPicSize } sizes={ speakerPicSize } alt='A Photograph of Mr. Subrahmanyam Pulipaka'/>
-                                <div className="text">
-                                    <span className="largeText">Mr. Subrahmanyam Pulipaka </span>
-                                    <span className="smallText">CEO, National Solar Energy Federation of India.</span>
-                                </div>
-                            </li>
+
+                            <TheCard2
+                                largeText='Prof. Marta Zurek-Mortka'
+                                smallText='Institute for Sustainable Technologies, Radom, Poland.'
+                                imageSrc={Prof_Marta_Zurek_Mortka} />
+                            <TheCard2
+                                largeText='Prof. Chris Mi'
+                                smallText='San Diego State University, USA.'
+                                imageSrc={Prof_Chris_Mi} />
+                            <TheCard2
+                                largeText='Prof. Nakai Hirotaka'
+                                smallText='High Energy Accelerator Research Organization (KEK), Japan.'
+                                imageSrc={Prof_Nakai_Hirotaka} />
+                            <TheCard2
+                                largeText='Dr. Ajay Mathur'
+                                smallText='Director General, International Solar Alliance.'
+                                imageSrc={Dr_Ajay_Mathur} />
+                            <TheCard2
+                                largeText='Mr. Subrahmanyam Pulipaka'
+                                smallText='CEO, National Solar Energy Federation of India.'
+                                imageSrc={Mr_Subrahmanyam_Pulipaka} />
 
                         </ul>
                         <div>
                             <TheSectionEndLink link="/tickets" text={
                                 <span className='flex jcc aic'>
-                                    <Image src={ticket} height={32} sizes={32} className='w-fc h-fc' alt=''/>
+                                    <Image src={ticket} height={32} sizes={32} className='w-fc h-fc' alt='' />
                                     <span className='w-fc h-fc'>Get Your Tickets Now!</span>
                                 </span>
                             } />

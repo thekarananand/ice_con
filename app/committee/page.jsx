@@ -13,7 +13,15 @@ const PageContent = () => {
             />
             <div className="S1 SkewSection">
                 <section className="content-container">
-                    <TheTimeline />
+                    <div className="content">
+                        <h2>Credits for Development of this website</h2>
+                        <ul>
+                            <li>Karan Anand</li>
+                            <li>Anirudh Malhotra</li>
+                            <li>Shubham Garg</li>
+                            <li>Nitish Garg</li>
+                        </ul>
+                    </div>
                 </section>
             </div>
         </main>
