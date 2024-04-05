@@ -61,12 +61,18 @@ const PageContent = () => {
                     <div className="buffer-1 flex-v gap_SkewSafeGap">
                         <section id="about" className="content-container">
                             <div className="content">
-                                <h2>
-                                    About E2A Conference
-                                </h2>
+
+                            <details id='details-tag'>
+                                <summary>
+                                    <h2>
+                                        About E2A Conference
+                                    </h2>
+                                </summary>
                                 <p>
                                     The International Conference on Electrical, Electronics, and Automation (E2A) serves as a global hub where experts gather to explore, collaborate, and share groundbreaking research and innovations in the rapidly evolving fields of electrical engineering, electronics, and automation. E2A provides a vital platform for diverse professionals to exchange ideas and knowledge, fostering innovation and shaping a future powered by cutting-edge technologies. Join us at E2A to be part of this transformative journey towards a  smarter, more connected, and automated world, where your contributions are essential in shaping the future. Selected papers will be published in SCOPUS indexed proceedings
                                 </p>
+                            </details> 
+
                             </div>
                         </section>
                         <section id="DocLinks" className="content-container">
