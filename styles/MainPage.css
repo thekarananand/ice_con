@@ -257,41 +257,54 @@ main{
 #DocLinks .grid li a{
     margin-top: 0.8rem;
 }
-
 #details-tag {
 
-    background-color: hsla(var(--hsl-accent-1), 0.2);
+    background-color: hsla(var(--hsl-accent-1), 0.1);
     box-sizing: border-box;
     padding: 1.3ch 1em;
     border-radius: 0.6ch;
 
-    summary{
+    summary {
         position: relative;
-        margin-block: 1rem;
-        
     }
+
     summary::marker {
-        content: none;
-    }
-    summary::before,
-    summary::after {
         content: '';
     }
-    summary::before,
-    summary::after {
-        width: .75em;
-        height: 0;
-        border-bottom: 2px solid;
+
+    summary:after {
+        content: '';
+        background-color: hsla(var(--hsl-accent-1), 0.6);
         position: absolute;
-        top: calc(50% - 1px);
+        height: 1.4em;
+        width: 1.4em;
+
+        border-radius: 50%;
+
+        top: 50%;
         right: 0;
         transform: translateY(-50%);
+
+        background-image: url(../public/arrow_down_dark.png);
+        object-fit: cover;
+        background-size: contain;
+        background-position: 0 1px;
+
     }
-    summary::after {
-        transform: rotate(90deg);
-        transform-origin: 50% 50%;
+
+
+
+    h2 {
+        margin: 0px !important;
+        font-size: 1.3rem;
     }
-    [open] summary::after {
-        transform: rotate(0deg);
+
+    p {
+        margin-top: 1rem;
     }
 }
+
+[open] summary::after {
+    transform: translateY(-50%) rotate( 180deg);
+}
+
